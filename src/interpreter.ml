@@ -62,8 +62,11 @@ let rec trystep (e : Expr.t) : outcome =
       | _ ,Expr.True  -> Step Expr.True
       | _, _ -> Step Expr.False
   )
-
-
+  | Expr.App {lam ; arg} -> (
+    (* (lam, fun lam' -> Expr.Lam {lam = lam';}) |-> fun () -> *)
+    let Expr.Lam{x;tau;e} = lam in
+    Step (Ast_util.Expr.substitute x arg e)
+  )
 
 
   | _ -> raise (RuntimeError (
@@ -91,4 +94,4 @@ let inline_tests () =
   assert (trystep e2 = Step(Expr.Num 3))
 
 (* Uncomment the line below when you want to run the inline tests. *)
-(* let () = inline_tests () *)
+let () = inline_tests ()

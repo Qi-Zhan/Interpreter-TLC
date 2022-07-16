@@ -22,6 +22,7 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
   (* Add more cases here! *)
   | Expr.True -> Ok Type.Bool
   | Expr.False -> Ok Type.Bool
+  | Expr.Unit -> Ok Type.Unit
   | Expr.Relop {left;right;_} ->(
     typecheck_expr ctx left >>= fun tau_left ->
     typecheck_expr ctx right >>= fun tau_right ->
@@ -59,7 +60,7 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
     typecheck_expr ctx else_ >>= fun tau_else_ ->
       match tau_cond with 
       | Type.Bool ->(
-        if tau_else_=  tau_then_ then (Ok tau_else_)
+        if Ast_util.Type.aequiv tau_else_ tau_then_ then (Ok tau_else_)
         else Error (
           Printf.sprintf
             "If branch have incompatible types: (%s : %s) and (%s : %s)"
@@ -71,7 +72,31 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
             "If cond have incompatible types: (%s : %s)"
             (Expr.to_string cond) (Type.to_string tau_cond))
     ) 
-         
+  | Expr.Var v -> (
+    match String.Map.find ctx v with 
+    | None -> Error (
+          Printf.sprintf
+            "Var have incompatible types: %s"
+            (Expr.to_string e) )
+    | Some tau -> Ok(tau)
+  )
+  | Expr.Lam {x;tau;e} -> (
+    let new_ctx = String.Map.set ctx ~key:x ~data:tau in
+    typecheck_expr new_ctx e >>= fun tau_e ->    
+    Ok(Type.Fn{arg = tau; ret = tau_e;})
+  )
+  | Expr.App {lam;arg;}-> (
+    typecheck_expr ctx lam >>= fun tau_lam ->
+    typecheck_expr ctx arg >>= fun tau_arg ->
+    match tau_lam with 
+    | Type.Fn {arg= lam_arg; ret = lam_ret} ->
+    if Ast_util.Type.aequiv lam_arg tau_arg then Ok lam_ret
+    else Error(          Printf.sprintf
+            "App have incompatible types: (%s : %s) and (%s : %s)"
+            (Expr.to_string lam) (Type.to_string tau_lam)
+            (Expr.to_string arg) (Type.to_string tau_arg))
+    | _ -> Error(Printf.sprintf "Something strange")
+  )
 
   | _ -> raise Unimplemented
 
@@ -96,4 +121,4 @@ let inline_tests () =
   assert (Result.is_error (typecheck t5))
 
 (* Uncomment the line below when you want to run the inline tests. *)
-(* let () = inline_tests () *)
+let () = inline_tests ()
