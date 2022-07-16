@@ -1,0 +1,5443 @@
+"src/ast_util.ml" 6 47 51 "src/ast_util.ml" 6 47 56
+type(
+  string -> string
+)
+ident(
+  def fresh "src/ast_util.ml" 8 70 70 "src/ast_util.ml" 1 0 -1
+)
+"src/ast_util.ml" 6 47 57 "src/ast_util.ml" 6 47 58
+type(
+  string
+)
+ident(
+  def s "src/ast_util.ml" 6 47 61 "src/ast_util.ml" 6 47 68
+)
+"src/ast_util.ml" 6 47 61 "src/ast_util.ml" 6 47 62
+type(
+  string
+)
+ident(
+  int_ref s "src/ast_util.ml" 6 47 57 "src/ast_util.ml" 6 47 58
+)
+"src/ast_util.ml" 6 47 63 "src/ast_util.ml" 6 47 64
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/ast_util.ml" 6 47 65 "src/ast_util.ml" 6 47 68
+type(
+  string
+)
+"src/ast_util.ml" 6 47 61 "src/ast_util.ml" 6 47 68
+call(
+  tail
+)
+type(
+  string
+)
+"src/ast_util.ml" 11 108 118 "src/ast_util.ml" 11 108 132
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  def substitute_map "src/ast_util.ml" 11 108 110 "src/ast_util.ml" 81 2353 2356
+)
+"src/ast_util.ml" 11 108 134 "src/ast_util.ml" 11 108 140
+type(
+  t String.Map.t
+)
+ident(
+  def rename "src/ast_util.ml" 11 108 159 "src/ast_util.ml" 17 280 310
+)
+"src/ast_util.ml" 11 108 160 "src/ast_util.ml" 11 108 163
+type(
+  t
+)
+ident(
+  def tau "src/ast_util.ml" 11 108 169 "src/ast_util.ml" 17 280 310
+)
+"src/ast_util.ml" 12 175 185 "src/ast_util.ml" 12 175 188
+type(
+  t
+)
+ident(
+  int_ref tau "src/ast_util.ml" 11 108 160 "src/ast_util.ml" 11 108 163
+)
+"src/ast_util.ml" 13 194 200 "src/ast_util.ml" 13 194 203
+type(
+  t
+)
+"src/ast_util.ml" 13 194 207 "src/ast_util.ml" 13 194 210
+type(
+  t
+)
+"src/ast_util.ml" 15 242 248 "src/ast_util.ml" 15 242 252
+type(
+  t
+)
+"src/ast_util.ml" 15 242 256 "src/ast_util.ml" 15 242 260
+type(
+  t
+)
+"src/ast_util.ml" 16 261 267 "src/ast_util.ml" 16 261 271
+type(
+  t
+)
+"src/ast_util.ml" 16 261 275 "src/ast_util.ml" 16 261 279
+type(
+  t
+)
+"src/ast_util.ml" 17 280 286 "src/ast_util.ml" 17 280 287
+type(
+  t
+)
+"src/ast_util.ml" 17 280 291 "src/ast_util.ml" 17 280 296
+type(
+  exn -> t
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/ast_util.ml" 17 280 297 "src/ast_util.ml" 17 280 310
+type(
+  exn
+)
+"src/ast_util.ml" 17 280 291 "src/ast_util.ml" 17 280 310
+type(
+  t
+)
+"src/ast_util.ml" 12 175 179 "src/ast_util.ml" 17 280 310
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+type(
+  string -> t -> t -> t
+)
+ident(
+  def substitute "src/ast_util.ml" 22 423 425 "src/ast_util.ml" 81 2353 2356
+)
+"src/ast_util.ml" 19 312 330 "src/ast_util.ml" 19 312 331
+type(
+  string
+)
+ident(
+  def x "src/ast_util.ml" 19 312 342 "src/ast_util.ml" 20 369 421
+)
+"src/ast_util.ml" 19 312 343 "src/ast_util.ml" 19 312 347
+type(
+  t
+)
+ident(
+  def tau' "src/ast_util.ml" 19 312 353 "src/ast_util.ml" 20 369 421
+)
+"src/ast_util.ml" 19 312 354 "src/ast_util.ml" 19 312 357
+type(
+  t
+)
+ident(
+  def tau "src/ast_util.ml" 19 312 363 "src/ast_util.ml" 20 369 421
+)
+"src/ast_util.ml" 20 369 373 "src/ast_util.ml" 20 369 387
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 11 108 118 "src/ast_util.ml" 11 108 132
+)
+"src/ast_util.ml" 20 369 389 "src/ast_util.ml" 20 369 409
+type(
+  string -> t -> t String.Map.t
+)
+ident(
+  int_ref Core.String.Map.singleton "src/map_intf.ml" 1153 39493 39495 "src/map_intf.ml" 1153 39493 39534
+)
+"src/ast_util.ml" 20 369 410 "src/ast_util.ml" 20 369 411
+type(
+  string
+)
+ident(
+  int_ref x "src/ast_util.ml" 19 312 330 "src/ast_util.ml" 19 312 331
+)
+"src/ast_util.ml" 20 369 412 "src/ast_util.ml" 20 369 416
+type(
+  t
+)
+ident(
+  int_ref tau' "src/ast_util.ml" 19 312 343 "src/ast_util.ml" 19 312 347
+)
+"src/ast_util.ml" 20 369 388 "src/ast_util.ml" 20 369 417
+call(
+  stack
+)
+type(
+  t String.Map.t
+)
+"src/ast_util.ml" 20 369 418 "src/ast_util.ml" 20 369 421
+type(
+  t
+)
+ident(
+  int_ref tau "src/ast_util.ml" 19 312 354 "src/ast_util.ml" 19 312 357
+)
+"src/ast_util.ml" 20 369 373 "src/ast_util.ml" 20 369 421
+call(
+  tail
+)
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 22 423 433 "src/ast_util.ml" 22 423 444
+type(
+  t -> t
+)
+ident(
+  def to_debruijn "src/ast_util.ml" 22 423 425 "src/ast_util.ml" 81 2353 2356
+)
+"src/ast_util.ml" 22 423 446 "src/ast_util.ml" 22 423 449
+type(
+  t
+)
+ident(
+  def tau "src/ast_util.ml" 22 423 455 "src/ast_util.ml" 31 675 703
+)
+"src/ast_util.ml" 23 461 473 "src/ast_util.ml" 23 461 476
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  def aux "src/ast_util.ml" 23 461 465 "src/ast_util.ml" 31 675 703
+)
+"src/ast_util.ml" 23 461 478 "src/ast_util.ml" 23 461 483
+type(
+  int String.Map.t
+)
+ident(
+  def depth "src/ast_util.ml" 23 461 504 "src/ast_util.ml" 29 635 667
+)
+"src/ast_util.ml" 23 461 505 "src/ast_util.ml" 23 461 508
+type(
+  t
+)
+ident(
+  def tau "src/ast_util.ml" 23 461 514 "src/ast_util.ml" 29 635 667
+)
+"src/ast_util.ml" 24 520 532 "src/ast_util.ml" 24 520 535
+type(
+  t
+)
+ident(
+  int_ref tau "src/ast_util.ml" 23 461 505 "src/ast_util.ml" 23 461 508
+)
+"src/ast_util.ml" 25 541 549 "src/ast_util.ml" 25 541 552
+type(
+  t
+)
+"src/ast_util.ml" 25 541 556 "src/ast_util.ml" 25 541 559
+type(
+  t
+)
+"src/ast_util.ml" 27 593 601 "src/ast_util.ml" 27 593 605
+type(
+  t
+)
+"src/ast_util.ml" 27 593 609 "src/ast_util.ml" 27 593 613
+type(
+  t
+)
+"src/ast_util.ml" 28 614 622 "src/ast_util.ml" 28 614 626
+type(
+  t
+)
+"src/ast_util.ml" 28 614 630 "src/ast_util.ml" 28 614 634
+type(
+  t
+)
+"src/ast_util.ml" 29 635 643 "src/ast_util.ml" 29 635 644
+type(
+  t
+)
+"src/ast_util.ml" 29 635 648 "src/ast_util.ml" 29 635 653
+type(
+  exn -> t
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/ast_util.ml" 29 635 654 "src/ast_util.ml" 29 635 667
+type(
+  exn
+)
+"src/ast_util.ml" 29 635 648 "src/ast_util.ml" 29 635 667
+type(
+  t
+)
+"src/ast_util.ml" 24 520 526 "src/ast_util.ml" 29 635 667
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 31 675 679 "src/ast_util.ml" 31 675 682
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 23 461 473 "src/ast_util.ml" 23 461 476
+)
+"src/ast_util.ml" 31 675 683 "src/ast_util.ml" 31 675 699
+type(
+  int String.Map.t
+)
+ident(
+  int_ref Core.String.Map.empty "src/map_intf.ml" 1152 39465 39467 "src/map_intf.ml" 1152 39465 39492
+)
+"src/ast_util.ml" 31 675 700 "src/ast_util.ml" 31 675 703
+type(
+  t
+)
+ident(
+  int_ref tau "src/ast_util.ml" 22 423 446 "src/ast_util.ml" 22 423 449
+)
+"src/ast_util.ml" 31 675 679 "src/ast_util.ml" 31 675 703
+call(
+  tail
+)
+type(
+  t
+)
+"src/ast_util.ml" 23 461 465 "src/ast_util.ml" 31 675 703
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+type(
+  t -> t -> bool
+)
+ident(
+  def aequiv "src/ast_util.ml" 33 705 707 "src/ast_util.ml" 81 2353 2356
+)
+"src/ast_util.ml" 33 705 723 "src/ast_util.ml" 33 705 727
+type(
+  t
+)
+ident(
+  def tau1 "src/ast_util.ml" 33 705 733 "src/ast_util.ml" 47 1298 1343
+)
+"src/ast_util.ml" 33 705 734 "src/ast_util.ml" 33 705 738
+type(
+  t
+)
+ident(
+  def tau2 "src/ast_util.ml" 33 705 744 "src/ast_util.ml" 47 1298 1343
+)
+"src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+type(
+  t -> t -> bool
+)
+ident(
+  def aux "src/ast_util.ml" 34 753 757 "src/ast_util.ml" 47 1298 1343
+)
+"src/ast_util.ml" 34 753 770 "src/ast_util.ml" 34 753 774
+type(
+  t
+)
+ident(
+  def tau1 "src/ast_util.ml" 34 753 780 "src/ast_util.ml" 45 1272 1290
+)
+"src/ast_util.ml" 34 753 781 "src/ast_util.ml" 34 753 785
+type(
+  t
+)
+ident(
+  def tau2 "src/ast_util.ml" 34 753 791 "src/ast_util.ml" 45 1272 1290
+)
+"src/ast_util.ml" 35 800 813 "src/ast_util.ml" 35 800 817
+type(
+  t
+)
+ident(
+  int_ref tau1 "src/ast_util.ml" 34 753 770 "src/ast_util.ml" 34 753 774
+)
+"src/ast_util.ml" 35 800 819 "src/ast_util.ml" 35 800 823
+type(
+  t
+)
+ident(
+  int_ref tau2 "src/ast_util.ml" 34 753 781 "src/ast_util.ml" 34 753 785
+)
+"src/ast_util.ml" 35 800 812 "src/ast_util.ml" 35 800 824
+type(
+  t * t
+)
+"src/ast_util.ml" 36 830 839 "src/ast_util.ml" 36 830 842
+type(
+  t
+)
+"src/ast_util.ml" 36 830 844 "src/ast_util.ml" 36 830 847
+type(
+  t
+)
+"src/ast_util.ml" 36 830 838 "src/ast_util.ml" 36 830 848
+type(
+  t * t
+)
+"src/ast_util.ml" 36 830 852 "src/ast_util.ml" 36 830 856
+type(
+  bool
+)
+"src/ast_util.ml" 37 857 866 "src/ast_util.ml" 37 857 870
+type(
+  t
+)
+"src/ast_util.ml" 37 857 872 "src/ast_util.ml" 37 857 876
+type(
+  t
+)
+"src/ast_util.ml" 37 857 865 "src/ast_util.ml" 37 857 877
+type(
+  t * t
+)
+"src/ast_util.ml" 37 857 881 "src/ast_util.ml" 37 857 885
+type(
+  t
+)
+"src/ast_util.ml" 37 857 887 "src/ast_util.ml" 37 857 891
+type(
+  t
+)
+"src/ast_util.ml" 37 857 880 "src/ast_util.ml" 37 857 892
+type(
+  t * t
+)
+"src/ast_util.ml" 37 857 865 "src/ast_util.ml" 37 857 892
+type(
+  t * t
+)
+"src/ast_util.ml" 37 857 896 "src/ast_util.ml" 37 857 900
+type(
+  bool
+)
+"src/ast_util.ml" 38 901 914 "src/ast_util.ml" 38 901 915
+type(
+  string
+)
+ident(
+  def x "src/ast_util.ml" 38 901 927 "src/ast_util.ml" 38 901 932
+)
+"src/ast_util.ml" 38 901 910 "src/ast_util.ml" 38 901 915
+type(
+  t
+)
+"src/ast_util.ml" 38 901 921 "src/ast_util.ml" 38 901 922
+type(
+  string
+)
+ident(
+  def y "src/ast_util.ml" 38 901 927 "src/ast_util.ml" 38 901 932
+)
+"src/ast_util.ml" 38 901 917 "src/ast_util.ml" 38 901 922
+type(
+  t
+)
+"src/ast_util.ml" 38 901 909 "src/ast_util.ml" 38 901 923
+type(
+  t * t
+)
+"src/ast_util.ml" 38 901 927 "src/ast_util.ml" 38 901 928
+type(
+  string
+)
+ident(
+  int_ref x "src/ast_util.ml" 38 901 914 "src/ast_util.ml" 38 901 915
+)
+"src/ast_util.ml" 38 901 929 "src/ast_util.ml" 38 901 930
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 38 901 931 "src/ast_util.ml" 38 901 932
+type(
+  string
+)
+ident(
+  int_ref y "src/ast_util.ml" 38 901 921 "src/ast_util.ml" 38 901 922
+)
+"src/ast_util.ml" 38 901 927 "src/ast_util.ml" 38 901 932
+type(
+  bool
+)
+"src/ast_util.ml" 39 933 945 "src/ast_util.ml" 39 933 946
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  def x "src/ast_util.ml" 39 933 957 "src/ast_util.ml" 39 933 991
+)
+"src/ast_util.ml" 39 933 942 "src/ast_util.ml" 39 933 946
+type(
+  t
+)
+"src/ast_util.ml" 39 933 951 "src/ast_util.ml" 39 933 952
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  def y "src/ast_util.ml" 39 933 957 "src/ast_util.ml" 39 933 991
+)
+"src/ast_util.ml" 39 933 948 "src/ast_util.ml" 39 933 952
+type(
+  t
+)
+"src/ast_util.ml" 39 933 941 "src/ast_util.ml" 39 933 953
+type(
+  t * t
+)
+"src/ast_util.ml" 39 933 957 "src/ast_util.ml" 39 933 960
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 39 933 961 "src/ast_util.ml" 39 933 962
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  int_ref x "src/ast_util.ml" 39 933 945 "src/ast_util.ml" 39 933 946
+)
+"src/ast_util.ml" 39 933 961 "src/ast_util.ml" 39 933 966
+type(
+  t
+)
+"src/ast_util.ml" 39 933 967 "src/ast_util.ml" 39 933 968
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  int_ref y "src/ast_util.ml" 39 933 951 "src/ast_util.ml" 39 933 952
+)
+"src/ast_util.ml" 39 933 967 "src/ast_util.ml" 39 933 972
+type(
+  t
+)
+"src/ast_util.ml" 39 933 957 "src/ast_util.ml" 39 933 972
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 39 933 973 "src/ast_util.ml" 39 933 975
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 39 933 976 "src/ast_util.ml" 39 933 979
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 39 933 980 "src/ast_util.ml" 39 933 981
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  int_ref x "src/ast_util.ml" 39 933 945 "src/ast_util.ml" 39 933 946
+)
+"src/ast_util.ml" 39 933 980 "src/ast_util.ml" 39 933 985
+type(
+  t
+)
+"src/ast_util.ml" 39 933 986 "src/ast_util.ml" 39 933 987
+type(
+  Ast.Type.t.Fn
+)
+ident(
+  int_ref y "src/ast_util.ml" 39 933 951 "src/ast_util.ml" 39 933 952
+)
+"src/ast_util.ml" 39 933 986 "src/ast_util.ml" 39 933 991
+type(
+  t
+)
+"src/ast_util.ml" 39 933 976 "src/ast_util.ml" 39 933 991
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 39 933 957 "src/ast_util.ml" 39 933 991
+type(
+  bool
+)
+"src/ast_util.ml" 40 992 1005 "src/ast_util.ml" 40 992 1006
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  def x "src/ast_util.ml" 40 992 1018 "src/ast_util.ml" 40 992 1058
+)
+"src/ast_util.ml" 40 992 1001 "src/ast_util.ml" 40 992 1006
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1012 "src/ast_util.ml" 40 992 1013
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  def y "src/ast_util.ml" 40 992 1018 "src/ast_util.ml" 40 992 1058
+)
+"src/ast_util.ml" 40 992 1008 "src/ast_util.ml" 40 992 1013
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1000 "src/ast_util.ml" 40 992 1014
+type(
+  t * t
+)
+"src/ast_util.ml" 40 992 1018 "src/ast_util.ml" 40 992 1021
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 40 992 1022 "src/ast_util.ml" 40 992 1023
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  int_ref x "src/ast_util.ml" 40 992 1005 "src/ast_util.ml" 40 992 1006
+)
+"src/ast_util.ml" 40 992 1022 "src/ast_util.ml" 40 992 1028
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1029 "src/ast_util.ml" 40 992 1030
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  int_ref y "src/ast_util.ml" 40 992 1012 "src/ast_util.ml" 40 992 1013
+)
+"src/ast_util.ml" 40 992 1029 "src/ast_util.ml" 40 992 1035
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1018 "src/ast_util.ml" 40 992 1035
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 40 992 1036 "src/ast_util.ml" 40 992 1038
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 40 992 1039 "src/ast_util.ml" 40 992 1042
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 40 992 1043 "src/ast_util.ml" 40 992 1044
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  int_ref x "src/ast_util.ml" 40 992 1005 "src/ast_util.ml" 40 992 1006
+)
+"src/ast_util.ml" 40 992 1043 "src/ast_util.ml" 40 992 1050
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1051 "src/ast_util.ml" 40 992 1052
+type(
+  Ast.Type.t.Sum
+)
+ident(
+  int_ref y "src/ast_util.ml" 40 992 1012 "src/ast_util.ml" 40 992 1013
+)
+"src/ast_util.ml" 40 992 1051 "src/ast_util.ml" 40 992 1058
+type(
+  t
+)
+"src/ast_util.ml" 40 992 1039 "src/ast_util.ml" 40 992 1058
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 40 992 1018 "src/ast_util.ml" 40 992 1058
+type(
+  bool
+)
+"src/ast_util.ml" 41 1059 1076 "src/ast_util.ml" 41 1059 1077
+type(
+  Ast.Type.t.Product
+)
+ident(
+  def x "src/ast_util.ml" 41 1059 1093 "src/ast_util.ml" 41 1059 1133
+)
+"src/ast_util.ml" 41 1059 1068 "src/ast_util.ml" 41 1059 1077
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1087 "src/ast_util.ml" 41 1059 1088
+type(
+  Ast.Type.t.Product
+)
+ident(
+  def y "src/ast_util.ml" 41 1059 1093 "src/ast_util.ml" 41 1059 1133
+)
+"src/ast_util.ml" 41 1059 1079 "src/ast_util.ml" 41 1059 1088
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1067 "src/ast_util.ml" 41 1059 1089
+type(
+  t * t
+)
+"src/ast_util.ml" 41 1059 1093 "src/ast_util.ml" 41 1059 1096
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 41 1059 1097 "src/ast_util.ml" 41 1059 1098
+type(
+  Ast.Type.t.Product
+)
+ident(
+  int_ref x "src/ast_util.ml" 41 1059 1076 "src/ast_util.ml" 41 1059 1077
+)
+"src/ast_util.ml" 41 1059 1097 "src/ast_util.ml" 41 1059 1103
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1104 "src/ast_util.ml" 41 1059 1105
+type(
+  Ast.Type.t.Product
+)
+ident(
+  int_ref y "src/ast_util.ml" 41 1059 1087 "src/ast_util.ml" 41 1059 1088
+)
+"src/ast_util.ml" 41 1059 1104 "src/ast_util.ml" 41 1059 1110
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1093 "src/ast_util.ml" 41 1059 1110
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 41 1059 1111 "src/ast_util.ml" 41 1059 1113
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 41 1059 1114 "src/ast_util.ml" 41 1059 1117
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 41 1059 1118 "src/ast_util.ml" 41 1059 1119
+type(
+  Ast.Type.t.Product
+)
+ident(
+  int_ref x "src/ast_util.ml" 41 1059 1076 "src/ast_util.ml" 41 1059 1077
+)
+"src/ast_util.ml" 41 1059 1118 "src/ast_util.ml" 41 1059 1125
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1126 "src/ast_util.ml" 41 1059 1127
+type(
+  Ast.Type.t.Product
+)
+ident(
+  int_ref y "src/ast_util.ml" 41 1059 1087 "src/ast_util.ml" 41 1059 1088
+)
+"src/ast_util.ml" 41 1059 1126 "src/ast_util.ml" 41 1059 1133
+type(
+  t
+)
+"src/ast_util.ml" 41 1059 1114 "src/ast_util.ml" 41 1059 1133
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 41 1059 1093 "src/ast_util.ml" 41 1059 1133
+type(
+  bool
+)
+"src/ast_util.ml" 42 1134 1147 "src/ast_util.ml" 42 1134 1148
+type(
+  Ast.Type.t.Rec
+)
+ident(
+  def x "src/ast_util.ml" 42 1134 1160 "src/ast_util.ml" 42 1134 1175
+)
+"src/ast_util.ml" 42 1134 1143 "src/ast_util.ml" 42 1134 1148
+type(
+  t
+)
+"src/ast_util.ml" 42 1134 1154 "src/ast_util.ml" 42 1134 1155
+type(
+  Ast.Type.t.Rec
+)
+ident(
+  def y "src/ast_util.ml" 42 1134 1160 "src/ast_util.ml" 42 1134 1175
+)
+"src/ast_util.ml" 42 1134 1150 "src/ast_util.ml" 42 1134 1155
+type(
+  t
+)
+"src/ast_util.ml" 42 1134 1142 "src/ast_util.ml" 42 1134 1156
+type(
+  t * t
+)
+"src/ast_util.ml" 42 1134 1160 "src/ast_util.ml" 42 1134 1163
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 42 1134 1164 "src/ast_util.ml" 42 1134 1165
+type(
+  Ast.Type.t.Rec
+)
+ident(
+  int_ref x "src/ast_util.ml" 42 1134 1147 "src/ast_util.ml" 42 1134 1148
+)
+"src/ast_util.ml" 42 1134 1164 "src/ast_util.ml" 42 1134 1169
+type(
+  t
+)
+"src/ast_util.ml" 42 1134 1170 "src/ast_util.ml" 42 1134 1171
+type(
+  Ast.Type.t.Rec
+)
+ident(
+  int_ref y "src/ast_util.ml" 42 1134 1154 "src/ast_util.ml" 42 1134 1155
+)
+"src/ast_util.ml" 42 1134 1170 "src/ast_util.ml" 42 1134 1175
+type(
+  t
+)
+"src/ast_util.ml" 42 1134 1160 "src/ast_util.ml" 42 1134 1175
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 43 1176 1192 "src/ast_util.ml" 43 1176 1193
+type(
+  Ast.Type.t.Forall
+)
+ident(
+  def x "src/ast_util.ml" 43 1176 1208 "src/ast_util.ml" 43 1176 1223
+)
+"src/ast_util.ml" 43 1176 1185 "src/ast_util.ml" 43 1176 1193
+type(
+  t
+)
+"src/ast_util.ml" 43 1176 1202 "src/ast_util.ml" 43 1176 1203
+type(
+  Ast.Type.t.Forall
+)
+ident(
+  def y "src/ast_util.ml" 43 1176 1208 "src/ast_util.ml" 43 1176 1223
+)
+"src/ast_util.ml" 43 1176 1195 "src/ast_util.ml" 43 1176 1203
+type(
+  t
+)
+"src/ast_util.ml" 43 1176 1184 "src/ast_util.ml" 43 1176 1204
+type(
+  t * t
+)
+"src/ast_util.ml" 43 1176 1208 "src/ast_util.ml" 43 1176 1211
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 43 1176 1212 "src/ast_util.ml" 43 1176 1213
+type(
+  Ast.Type.t.Forall
+)
+ident(
+  int_ref x "src/ast_util.ml" 43 1176 1192 "src/ast_util.ml" 43 1176 1193
+)
+"src/ast_util.ml" 43 1176 1212 "src/ast_util.ml" 43 1176 1217
+type(
+  t
+)
+"src/ast_util.ml" 43 1176 1218 "src/ast_util.ml" 43 1176 1219
+type(
+  Ast.Type.t.Forall
+)
+ident(
+  int_ref y "src/ast_util.ml" 43 1176 1202 "src/ast_util.ml" 43 1176 1203
+)
+"src/ast_util.ml" 43 1176 1218 "src/ast_util.ml" 43 1176 1223
+type(
+  t
+)
+"src/ast_util.ml" 43 1176 1208 "src/ast_util.ml" 43 1176 1223
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 44 1224 1240 "src/ast_util.ml" 44 1224 1241
+type(
+  Ast.Type.t.Exists
+)
+ident(
+  def x "src/ast_util.ml" 44 1224 1256 "src/ast_util.ml" 44 1224 1271
+)
+"src/ast_util.ml" 44 1224 1233 "src/ast_util.ml" 44 1224 1241
+type(
+  t
+)
+"src/ast_util.ml" 44 1224 1250 "src/ast_util.ml" 44 1224 1251
+type(
+  Ast.Type.t.Exists
+)
+ident(
+  def y "src/ast_util.ml" 44 1224 1256 "src/ast_util.ml" 44 1224 1271
+)
+"src/ast_util.ml" 44 1224 1243 "src/ast_util.ml" 44 1224 1251
+type(
+  t
+)
+"src/ast_util.ml" 44 1224 1232 "src/ast_util.ml" 44 1224 1252
+type(
+  t * t
+)
+"src/ast_util.ml" 44 1224 1256 "src/ast_util.ml" 44 1224 1259
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 44 1224 1260 "src/ast_util.ml" 44 1224 1261
+type(
+  Ast.Type.t.Exists
+)
+ident(
+  int_ref x "src/ast_util.ml" 44 1224 1240 "src/ast_util.ml" 44 1224 1241
+)
+"src/ast_util.ml" 44 1224 1260 "src/ast_util.ml" 44 1224 1265
+type(
+  t
+)
+"src/ast_util.ml" 44 1224 1266 "src/ast_util.ml" 44 1224 1267
+type(
+  Ast.Type.t.Exists
+)
+ident(
+  int_ref y "src/ast_util.ml" 44 1224 1250 "src/ast_util.ml" 44 1224 1251
+)
+"src/ast_util.ml" 44 1224 1266 "src/ast_util.ml" 44 1224 1271
+type(
+  t
+)
+"src/ast_util.ml" 44 1224 1256 "src/ast_util.ml" 44 1224 1271
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 45 1272 1280 "src/ast_util.ml" 45 1272 1281
+type(
+  t * t
+)
+"src/ast_util.ml" 45 1272 1285 "src/ast_util.ml" 45 1272 1290
+type(
+  bool
+)
+"src/ast_util.ml" 35 800 806 "src/ast_util.ml" 45 1272 1290
+type(
+  bool
+)
+type(
+  bool
+)
+"src/ast_util.ml" 47 1298 1302 "src/ast_util.ml" 47 1298 1305
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 34 753 765 "src/ast_util.ml" 34 753 768
+)
+"src/ast_util.ml" 47 1298 1307 "src/ast_util.ml" 47 1298 1318
+type(
+  t -> t
+)
+ident(
+  int_ref to_debruijn "src/ast_util.ml" 22 423 433 "src/ast_util.ml" 22 423 444
+)
+"src/ast_util.ml" 47 1298 1319 "src/ast_util.ml" 47 1298 1323
+type(
+  t
+)
+ident(
+  int_ref tau1 "src/ast_util.ml" 33 705 723 "src/ast_util.ml" 33 705 727
+)
+"src/ast_util.ml" 47 1298 1306 "src/ast_util.ml" 47 1298 1324
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 47 1298 1326 "src/ast_util.ml" 47 1298 1337
+type(
+  t -> t
+)
+ident(
+  int_ref to_debruijn "src/ast_util.ml" 22 423 433 "src/ast_util.ml" 22 423 444
+)
+"src/ast_util.ml" 47 1298 1338 "src/ast_util.ml" 47 1298 1342
+type(
+  t
+)
+ident(
+  int_ref tau2 "src/ast_util.ml" 33 705 734 "src/ast_util.ml" 33 705 738
+)
+"src/ast_util.ml" 47 1298 1325 "src/ast_util.ml" 47 1298 1343
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 47 1298 1302 "src/ast_util.ml" 47 1298 1343
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 34 753 757 "src/ast_util.ml" 47 1298 1343
+type(
+  bool
+)
+type(
+  bool
+)
+"src/ast_util.ml" 49 1345 1351 "src/ast_util.ml" 49 1345 1363
+type(
+  unit -> unit
+)
+ident(
+  def inline_tests "src/ast_util.ml" 77 2197 2246 "src/ast_util.ml" 81 2353 2356
+)
+"src/ast_util.ml" 49 1345 1364 "src/ast_util.ml" 49 1345 1366
+type(
+  unit
+)
+"src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+type(
+  string -> t
+)
+ident(
+  def p "src/ast_util.ml" 52 1407 1411 "src/ast_util.ml" 77 2197 2246
+)
+"src/ast_util.ml" 50 1369 1381 "src/ast_util.ml" 50 1369 1402
+type(
+  string -> t
+)
+ident(
+  int_ref Parser.parse_type_exn "src/parser.ml" 28 717 721 "src/parser.ml" 28 717 735
+)
+"src/ast_util.ml" 53 1420 1426 "src/ast_util.ml" 53 1420 1432
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 54 1433 1442 "src/ast_util.ml" 54 1433 1452
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+)
+"src/ast_util.ml" 54 1433 1453 "src/ast_util.ml" 54 1433 1456
+type(
+  string
+)
+"src/ast_util.ml" 54 1433 1458 "src/ast_util.ml" 54 1433 1459
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 54 1433 1460 "src/ast_util.ml" 54 1433 1465
+type(
+  string
+)
+"src/ast_util.ml" 54 1433 1457 "src/ast_util.ml" 54 1433 1466
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 54 1433 1468 "src/ast_util.ml" 54 1433 1469
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 54 1433 1470 "src/ast_util.ml" 54 1433 1484
+type(
+  string
+)
+"src/ast_util.ml" 54 1433 1467 "src/ast_util.ml" 54 1433 1485
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 54 1433 1441 "src/ast_util.ml" 54 1433 1486
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 55 1487 1496 "src/ast_util.ml" 55 1487 1497
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 55 1487 1498 "src/ast_util.ml" 55 1487 1514
+type(
+  string
+)
+"src/ast_util.ml" 55 1487 1495 "src/ast_util.ml" 55 1487 1515
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 52 1407 1418 "src/ast_util.ml" 55 1487 1516
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 52 1407 1411 "src/ast_util.ml" 55 1487 1516
+type(
+  unit
+)
+"src/ast_util.ml" 57 1531 1537 "src/ast_util.ml" 57 1531 1543
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 58 1544 1553 "src/ast_util.ml" 58 1544 1563
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+)
+"src/ast_util.ml" 58 1544 1564 "src/ast_util.ml" 58 1544 1567
+type(
+  string
+)
+"src/ast_util.ml" 58 1544 1569 "src/ast_util.ml" 58 1544 1570
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 58 1544 1571 "src/ast_util.ml" 58 1544 1574
+type(
+  string
+)
+"src/ast_util.ml" 58 1544 1568 "src/ast_util.ml" 58 1544 1575
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 58 1544 1577 "src/ast_util.ml" 58 1544 1578
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 58 1544 1579 "src/ast_util.ml" 58 1544 1593
+type(
+  string
+)
+"src/ast_util.ml" 58 1544 1576 "src/ast_util.ml" 58 1544 1594
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 58 1544 1552 "src/ast_util.ml" 58 1544 1595
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 59 1596 1605 "src/ast_util.ml" 59 1596 1606
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 59 1596 1607 "src/ast_util.ml" 59 1596 1621
+type(
+  string
+)
+"src/ast_util.ml" 59 1596 1604 "src/ast_util.ml" 59 1596 1622
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 56 1518 1529 "src/ast_util.ml" 59 1596 1623
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 56 1518 1522 "src/ast_util.ml" 59 1596 1623
+type(
+  unit
+)
+"src/ast_util.ml" 61 1638 1644 "src/ast_util.ml" 61 1638 1647
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/ast_util.ml" 61 1638 1649 "src/ast_util.ml" 61 1638 1655
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 62 1656 1665 "src/ast_util.ml" 62 1656 1675
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+)
+"src/ast_util.ml" 62 1656 1676 "src/ast_util.ml" 62 1656 1679
+type(
+  string
+)
+"src/ast_util.ml" 62 1656 1681 "src/ast_util.ml" 62 1656 1682
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 62 1656 1683 "src/ast_util.ml" 62 1656 1686
+type(
+  string
+)
+"src/ast_util.ml" 62 1656 1680 "src/ast_util.ml" 62 1656 1687
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 62 1656 1689 "src/ast_util.ml" 62 1656 1690
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 62 1656 1691 "src/ast_util.ml" 62 1656 1705
+type(
+  string
+)
+"src/ast_util.ml" 62 1656 1688 "src/ast_util.ml" 62 1656 1706
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 62 1656 1664 "src/ast_util.ml" 62 1656 1707
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 63 1708 1717 "src/ast_util.ml" 63 1708 1718
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 63 1708 1719 "src/ast_util.ml" 63 1708 1733
+type(
+  string
+)
+"src/ast_util.ml" 63 1708 1716 "src/ast_util.ml" 63 1708 1734
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 61 1638 1648 "src/ast_util.ml" 63 1708 1735
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 60 1625 1636 "src/ast_util.ml" 63 1708 1736
+type(
+  bool
+)
+"src/ast_util.ml" 60 1625 1629 "src/ast_util.ml" 63 1708 1736
+type(
+  unit
+)
+"src/ast_util.ml" 65 1751 1757 "src/ast_util.ml" 65 1751 1763
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 66 1764 1773 "src/ast_util.ml" 66 1764 1783
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+)
+"src/ast_util.ml" 66 1764 1784 "src/ast_util.ml" 66 1764 1787
+type(
+  string
+)
+"src/ast_util.ml" 66 1764 1789 "src/ast_util.ml" 66 1764 1790
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 66 1764 1791 "src/ast_util.ml" 66 1764 1794
+type(
+  string
+)
+"src/ast_util.ml" 66 1764 1788 "src/ast_util.ml" 66 1764 1795
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 66 1764 1797 "src/ast_util.ml" 66 1764 1798
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 66 1764 1799 "src/ast_util.ml" 66 1764 1824
+type(
+  string
+)
+"src/ast_util.ml" 66 1764 1796 "src/ast_util.ml" 66 1764 1825
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 66 1764 1772 "src/ast_util.ml" 66 1764 1826
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 67 1827 1836 "src/ast_util.ml" 67 1827 1837
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 67 1827 1838 "src/ast_util.ml" 67 1827 1863
+type(
+  string
+)
+"src/ast_util.ml" 67 1827 1835 "src/ast_util.ml" 67 1827 1864
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 64 1738 1749 "src/ast_util.ml" 67 1827 1865
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 64 1738 1742 "src/ast_util.ml" 67 1827 1865
+type(
+  unit
+)
+"src/ast_util.ml" 69 1880 1886 "src/ast_util.ml" 69 1880 1889
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/ast_util.ml" 69 1880 1891 "src/ast_util.ml" 69 1880 1897
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 70 1898 1907 "src/ast_util.ml" 70 1898 1917
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 19 312 318 "src/ast_util.ml" 19 312 328
+)
+"src/ast_util.ml" 70 1898 1918 "src/ast_util.ml" 70 1898 1921
+type(
+  string
+)
+"src/ast_util.ml" 70 1898 1923 "src/ast_util.ml" 70 1898 1924
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 70 1898 1925 "src/ast_util.ml" 70 1898 1928
+type(
+  string
+)
+"src/ast_util.ml" 70 1898 1922 "src/ast_util.ml" 70 1898 1929
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 70 1898 1931 "src/ast_util.ml" 70 1898 1932
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 70 1898 1933 "src/ast_util.ml" 70 1898 1958
+type(
+  string
+)
+"src/ast_util.ml" 70 1898 1930 "src/ast_util.ml" 70 1898 1959
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 70 1898 1906 "src/ast_util.ml" 70 1898 1960
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 71 1961 1970 "src/ast_util.ml" 71 1961 1971
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 71 1961 1972 "src/ast_util.ml" 71 1961 1997
+type(
+  string
+)
+"src/ast_util.ml" 71 1961 1969 "src/ast_util.ml" 71 1961 1998
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 69 1880 1890 "src/ast_util.ml" 71 1961 1999
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 68 1867 1878 "src/ast_util.ml" 71 1961 2000
+type(
+  bool
+)
+"src/ast_util.ml" 68 1867 1871 "src/ast_util.ml" 71 1961 2000
+type(
+  unit
+)
+"src/ast_util.ml" 73 2003 2015 "src/ast_util.ml" 73 2003 2021
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 73 2003 2023 "src/ast_util.ml" 73 2003 2024
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 73 2003 2025 "src/ast_util.ml" 73 2003 2039
+type(
+  string
+)
+"src/ast_util.ml" 73 2003 2022 "src/ast_util.ml" 73 2003 2040
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 73 2003 2042 "src/ast_util.ml" 73 2003 2043
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 73 2003 2044 "src/ast_util.ml" 73 2003 2058
+type(
+  string
+)
+"src/ast_util.ml" 73 2003 2041 "src/ast_util.ml" 73 2003 2059
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 73 2003 2014 "src/ast_util.ml" 73 2003 2060
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 73 2003 2007 "src/ast_util.ml" 73 2003 2060
+type(
+  unit
+)
+"src/ast_util.ml" 74 2062 2074 "src/ast_util.ml" 74 2062 2077
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/ast_util.ml" 74 2062 2079 "src/ast_util.ml" 74 2062 2085
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 74 2062 2087 "src/ast_util.ml" 74 2062 2088
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 74 2062 2089 "src/ast_util.ml" 74 2062 2103
+type(
+  string
+)
+"src/ast_util.ml" 74 2062 2086 "src/ast_util.ml" 74 2062 2104
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 74 2062 2106 "src/ast_util.ml" 74 2062 2107
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 74 2062 2108 "src/ast_util.ml" 74 2062 2124
+type(
+  string
+)
+"src/ast_util.ml" 74 2062 2105 "src/ast_util.ml" 74 2062 2125
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 74 2062 2078 "src/ast_util.ml" 74 2062 2126
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 74 2062 2073 "src/ast_util.ml" 74 2062 2127
+type(
+  bool
+)
+"src/ast_util.ml" 74 2062 2066 "src/ast_util.ml" 74 2062 2127
+type(
+  unit
+)
+"src/ast_util.ml" 75 2129 2141 "src/ast_util.ml" 75 2129 2147
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 33 705 715 "src/ast_util.ml" 33 705 721
+)
+"src/ast_util.ml" 76 2148 2163 "src/ast_util.ml" 76 2148 2164
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 76 2148 2165 "src/ast_util.ml" 76 2148 2195
+type(
+  string
+)
+"src/ast_util.ml" 76 2148 2162 "src/ast_util.ml" 76 2148 2196
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 77 2197 2212 "src/ast_util.ml" 77 2197 2213
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 50 1369 1377 "src/ast_util.ml" 50 1369 1378
+)
+"src/ast_util.ml" 77 2197 2214 "src/ast_util.ml" 77 2197 2244
+type(
+  string
+)
+"src/ast_util.ml" 77 2197 2211 "src/ast_util.ml" 77 2197 2245
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 75 2129 2140 "src/ast_util.ml" 77 2197 2246
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 75 2129 2133 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 74 2062 2066 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 73 2003 2007 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 68 1867 1871 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 64 1738 1742 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 60 1625 1629 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 56 1518 1522 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 52 1407 1411 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 50 1369 1373 "src/ast_util.ml" 77 2197 2246
+type(
+  unit
+)
+"src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  def substitute_map "src/ast_util.ml" 86 2396 2398 "src/ast_util.ml" 196 6291 6294
+)
+"src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+type(
+  t String.Map.t
+)
+ident(
+  def rename "src/ast_util.ml" 86 2396 2447 "src/ast_util.ml" 100 2874 2904
+)
+"src/ast_util.ml" 86 2396 2448 "src/ast_util.ml" 86 2396 2449
+type(
+  t
+)
+ident(
+  def e "src/ast_util.ml" 86 2396 2455 "src/ast_util.ml" 100 2874 2904
+)
+"src/ast_util.ml" 87 2461 2471 "src/ast_util.ml" 87 2461 2472
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 86 2396 2448 "src/ast_util.ml" 86 2396 2449
+)
+"src/ast_util.ml" 88 2478 2488 "src/ast_util.ml" 88 2478 2489
+type(
+  int
+)
+"src/ast_util.ml" 88 2478 2484 "src/ast_util.ml" 88 2478 2489
+type(
+  t
+)
+"src/ast_util.ml" 88 2478 2493 "src/ast_util.ml" 88 2478 2494
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 86 2396 2448 "src/ast_util.ml" 86 2396 2449
+)
+"src/ast_util.ml" 89 2495 2508 "src/ast_util.ml" 89 2495 2513
+type(
+  binop
+)
+ident(
+  def binop "src/ast_util.ml" 89 2495 2531 "src/ast_util.ml" 92 2593 2635
+)
+"src/ast_util.ml" 89 2495 2515 "src/ast_util.ml" 89 2495 2519
+type(
+  t
+)
+ident(
+  def left "src/ast_util.ml" 89 2495 2531 "src/ast_util.ml" 92 2593 2635
+)
+"src/ast_util.ml" 89 2495 2521 "src/ast_util.ml" 89 2495 2526
+type(
+  t
+)
+ident(
+  def right "src/ast_util.ml" 89 2495 2531 "src/ast_util.ml" 92 2593 2635
+)
+"src/ast_util.ml" 89 2495 2507 "src/ast_util.ml" 89 2495 2527
+type(
+  Ast.Expr.t.Binop
+)
+"src/ast_util.ml" 89 2495 2501 "src/ast_util.ml" 89 2495 2527
+type(
+  t
+)
+"src/ast_util.ml" 90 2539 2545 "src/ast_util.ml" 90 2539 2550
+type(
+  binop
+)
+ident(
+  int_ref binop "src/ast_util.ml" 89 2495 2508 "src/ast_util.ml" 89 2495 2513
+)
+"src/ast_util.ml" 91 2552 2565 "src/ast_util.ml" 91 2552 2579
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 91 2552 2580 "src/ast_util.ml" 91 2552 2586
+type(
+  t String.Map.t
+)
+ident(
+  int_ref rename "src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+)
+"src/ast_util.ml" 91 2552 2587 "src/ast_util.ml" 91 2552 2591
+type(
+  t
+)
+ident(
+  int_ref left "src/ast_util.ml" 89 2495 2515 "src/ast_util.ml" 89 2495 2519
+)
+"src/ast_util.ml" 91 2552 2565 "src/ast_util.ml" 91 2552 2591
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 92 2593 2607 "src/ast_util.ml" 92 2593 2621
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 92 2593 2622 "src/ast_util.ml" 92 2593 2628
+type(
+  t String.Map.t
+)
+ident(
+  int_ref rename "src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+)
+"src/ast_util.ml" 92 2593 2629 "src/ast_util.ml" 92 2593 2634
+type(
+  t
+)
+ident(
+  int_ref right "src/ast_util.ml" 89 2495 2521 "src/ast_util.ml" 89 2495 2526
+)
+"src/ast_util.ml" 92 2593 2607 "src/ast_util.ml" 92 2593 2634
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 89 2495 2537 "src/ast_util.ml" 92 2593 2635
+type(
+  Ast.Expr.t.Binop
+)
+"src/ast_util.ml" 89 2495 2531 "src/ast_util.ml" 92 2593 2635
+type(
+  t
+)
+"src/ast_util.ml" 94 2667 2673 "src/ast_util.ml" 94 2667 2677
+type(
+  t
+)
+"src/ast_util.ml" 94 2667 2681 "src/ast_util.ml" 94 2667 2685
+type(
+  t
+)
+"src/ast_util.ml" 95 2686 2692 "src/ast_util.ml" 95 2686 2697
+type(
+  t
+)
+"src/ast_util.ml" 95 2686 2701 "src/ast_util.ml" 95 2686 2706
+type(
+  t
+)
+"src/ast_util.ml" 96 2707 2717 "src/ast_util.ml" 96 2707 2721
+type(
+  t
+)
+ident(
+  def cond "src/ast_util.ml" 96 2707 2740 "src/ast_util.ml" 99 2828 2873
+)
+"src/ast_util.ml" 96 2707 2724 "src/ast_util.ml" 96 2707 2729
+type(
+  t
+)
+ident(
+  def then_ "src/ast_util.ml" 96 2707 2740 "src/ast_util.ml" 99 2828 2873
+)
+"src/ast_util.ml" 96 2707 2730 "src/ast_util.ml" 96 2707 2735
+type(
+  t
+)
+ident(
+  def else_ "src/ast_util.ml" 96 2707 2740 "src/ast_util.ml" 99 2828 2873
+)
+"src/ast_util.ml" 96 2707 2716 "src/ast_util.ml" 96 2707 2736
+type(
+  Ast.Expr.t.If
+)
+"src/ast_util.ml" 96 2707 2713 "src/ast_util.ml" 96 2707 2736
+type(
+  t
+)
+"src/ast_util.ml" 97 2744 2757 "src/ast_util.ml" 97 2744 2771
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 97 2744 2772 "src/ast_util.ml" 97 2744 2778
+type(
+  t String.Map.t
+)
+ident(
+  int_ref rename "src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+)
+"src/ast_util.ml" 97 2744 2779 "src/ast_util.ml" 97 2744 2783
+type(
+  t
+)
+ident(
+  int_ref cond "src/ast_util.ml" 96 2707 2717 "src/ast_util.ml" 96 2707 2721
+)
+"src/ast_util.ml" 97 2744 2757 "src/ast_util.ml" 97 2744 2783
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 98 2785 2799 "src/ast_util.ml" 98 2785 2813
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 98 2785 2814 "src/ast_util.ml" 98 2785 2820
+type(
+  t String.Map.t
+)
+ident(
+  int_ref rename "src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+)
+"src/ast_util.ml" 98 2785 2821 "src/ast_util.ml" 98 2785 2826
+type(
+  t
+)
+ident(
+  int_ref then_ "src/ast_util.ml" 96 2707 2724 "src/ast_util.ml" 96 2707 2729
+)
+"src/ast_util.ml" 98 2785 2799 "src/ast_util.ml" 98 2785 2826
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 99 2828 2842 "src/ast_util.ml" 99 2828 2856
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 99 2828 2857 "src/ast_util.ml" 99 2828 2863
+type(
+  t String.Map.t
+)
+ident(
+  int_ref rename "src/ast_util.ml" 86 2396 2422 "src/ast_util.ml" 86 2396 2428
+)
+"src/ast_util.ml" 99 2828 2864 "src/ast_util.ml" 99 2828 2869
+type(
+  t
+)
+ident(
+  int_ref else_ "src/ast_util.ml" 96 2707 2730 "src/ast_util.ml" 96 2707 2735
+)
+"src/ast_util.ml" 99 2828 2842 "src/ast_util.ml" 99 2828 2869
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 96 2707 2742 "src/ast_util.ml" 99 2828 2873
+type(
+  Ast.Expr.t.If
+)
+"src/ast_util.ml" 96 2707 2740 "src/ast_util.ml" 99 2828 2873
+type(
+  t
+)
+"src/ast_util.ml" 100 2874 2880 "src/ast_util.ml" 100 2874 2881
+type(
+  t
+)
+"src/ast_util.ml" 100 2874 2885 "src/ast_util.ml" 100 2874 2890
+type(
+  exn -> t
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/ast_util.ml" 100 2874 2891 "src/ast_util.ml" 100 2874 2904
+type(
+  exn
+)
+"src/ast_util.ml" 100 2874 2885 "src/ast_util.ml" 100 2874 2904
+type(
+  t
+)
+"src/ast_util.ml" 87 2461 2465 "src/ast_util.ml" 100 2874 2904
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 102 2906 2912 "src/ast_util.ml" 102 2906 2922
+type(
+  string -> t -> t -> t
+)
+ident(
+  def substitute "src/ast_util.ml" 105 3009 3011 "src/ast_util.ml" 196 6291 6294
+)
+"src/ast_util.ml" 102 2906 2924 "src/ast_util.ml" 102 2906 2925
+type(
+  string
+)
+ident(
+  def x "src/ast_util.ml" 102 2906 2936 "src/ast_util.ml" 103 2959 3007
+)
+"src/ast_util.ml" 102 2906 2937 "src/ast_util.ml" 102 2906 2939
+type(
+  t
+)
+ident(
+  def e' "src/ast_util.ml" 102 2906 2945 "src/ast_util.ml" 103 2959 3007
+)
+"src/ast_util.ml" 102 2906 2946 "src/ast_util.ml" 102 2906 2947
+type(
+  t
+)
+ident(
+  def e "src/ast_util.ml" 102 2906 2953 "src/ast_util.ml" 103 2959 3007
+)
+"src/ast_util.ml" 103 2959 2963 "src/ast_util.ml" 103 2959 2977
+type(
+  t String.Map.t -> t -> t
+)
+ident(
+  int_ref substitute_map "src/ast_util.ml" 86 2396 2406 "src/ast_util.ml" 86 2396 2420
+)
+"src/ast_util.ml" 103 2959 2979 "src/ast_util.ml" 103 2959 2999
+type(
+  string -> t -> t String.Map.t
+)
+ident(
+  int_ref Core.String.Map.singleton "src/map_intf.ml" 1153 39493 39495 "src/map_intf.ml" 1153 39493 39534
+)
+"src/ast_util.ml" 103 2959 3000 "src/ast_util.ml" 103 2959 3001
+type(
+  string
+)
+ident(
+  int_ref x "src/ast_util.ml" 102 2906 2924 "src/ast_util.ml" 102 2906 2925
+)
+"src/ast_util.ml" 103 2959 3002 "src/ast_util.ml" 103 2959 3004
+type(
+  t
+)
+ident(
+  int_ref e' "src/ast_util.ml" 102 2906 2937 "src/ast_util.ml" 102 2906 2939
+)
+"src/ast_util.ml" 103 2959 2978 "src/ast_util.ml" 103 2959 3005
+call(
+  stack
+)
+type(
+  t String.Map.t
+)
+"src/ast_util.ml" 103 2959 3006 "src/ast_util.ml" 103 2959 3007
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 102 2906 2946 "src/ast_util.ml" 102 2906 2947
+)
+"src/ast_util.ml" 103 2959 2963 "src/ast_util.ml" 103 2959 3007
+call(
+  tail
+)
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 105 3009 3019 "src/ast_util.ml" 105 3009 3030
+type(
+  t -> t
+)
+ident(
+  def to_debruijn "src/ast_util.ml" 105 3009 3011 "src/ast_util.ml" 196 6291 6294
+)
+"src/ast_util.ml" 105 3009 3032 "src/ast_util.ml" 105 3009 3033
+type(
+  t
+)
+ident(
+  def e "src/ast_util.ml" 105 3009 3039 "src/ast_util.ml" 125 3811 3837
+)
+"src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  def aux "src/ast_util.ml" 106 3045 3049 "src/ast_util.ml" 125 3811 3837
+)
+"src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+type(
+  int String.Map.t
+)
+ident(
+  def depth "src/ast_util.ml" 106 3045 3088 "src/ast_util.ml" 123 3771 3803
+)
+"src/ast_util.ml" 106 3045 3089 "src/ast_util.ml" 106 3045 3090
+type(
+  t
+)
+ident(
+  def e "src/ast_util.ml" 106 3045 3096 "src/ast_util.ml" 123 3771 3803
+)
+"src/ast_util.ml" 107 3102 3114 "src/ast_util.ml" 107 3102 3115
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 106 3045 3089 "src/ast_util.ml" 106 3045 3090
+)
+"src/ast_util.ml" 108 3121 3133 "src/ast_util.ml" 108 3121 3134
+type(
+  int
+)
+"src/ast_util.ml" 108 3121 3129 "src/ast_util.ml" 108 3121 3134
+type(
+  t
+)
+"src/ast_util.ml" 108 3121 3138 "src/ast_util.ml" 108 3121 3139
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 106 3045 3089 "src/ast_util.ml" 106 3045 3090
+)
+"src/ast_util.ml" 109 3140 3155 "src/ast_util.ml" 109 3140 3160
+type(
+  binop
+)
+ident(
+  def binop "src/ast_util.ml" 109 3140 3178 "src/ast_util.ml" 110 3186 3248
+)
+"src/ast_util.ml" 109 3140 3162 "src/ast_util.ml" 109 3140 3166
+type(
+  t
+)
+ident(
+  def left "src/ast_util.ml" 109 3140 3178 "src/ast_util.ml" 110 3186 3248
+)
+"src/ast_util.ml" 109 3140 3168 "src/ast_util.ml" 109 3140 3173
+type(
+  t
+)
+ident(
+  def right "src/ast_util.ml" 109 3140 3178 "src/ast_util.ml" 110 3186 3248
+)
+"src/ast_util.ml" 109 3140 3154 "src/ast_util.ml" 109 3140 3174
+type(
+  Ast.Expr.t.Binop
+)
+"src/ast_util.ml" 109 3140 3148 "src/ast_util.ml" 109 3140 3174
+type(
+  t
+)
+"src/ast_util.ml" 110 3186 3194 "src/ast_util.ml" 110 3186 3199
+type(
+  binop
+)
+ident(
+  int_ref binop "src/ast_util.ml" 109 3140 3155 "src/ast_util.ml" 109 3140 3160
+)
+"src/ast_util.ml" 110 3186 3208 "src/ast_util.ml" 110 3186 3211
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 110 3186 3212 "src/ast_util.ml" 110 3186 3217
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 110 3186 3218 "src/ast_util.ml" 110 3186 3222
+type(
+  t
+)
+ident(
+  int_ref left "src/ast_util.ml" 109 3140 3162 "src/ast_util.ml" 109 3140 3166
+)
+"src/ast_util.ml" 110 3186 3208 "src/ast_util.ml" 110 3186 3222
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 110 3186 3232 "src/ast_util.ml" 110 3186 3235
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 110 3186 3236 "src/ast_util.ml" 110 3186 3241
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 110 3186 3242 "src/ast_util.ml" 110 3186 3247
+type(
+  t
+)
+ident(
+  int_ref right "src/ast_util.ml" 109 3140 3168 "src/ast_util.ml" 109 3140 3173
+)
+"src/ast_util.ml" 110 3186 3232 "src/ast_util.ml" 110 3186 3247
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 109 3140 3184 "src/ast_util.ml" 110 3186 3248
+type(
+  Ast.Expr.t.Binop
+)
+"src/ast_util.ml" 109 3140 3178 "src/ast_util.ml" 110 3186 3248
+type(
+  t
+)
+"src/ast_util.ml" 112 3282 3290 "src/ast_util.ml" 112 3282 3294
+type(
+  t
+)
+"src/ast_util.ml" 112 3282 3298 "src/ast_util.ml" 112 3282 3302
+type(
+  t
+)
+"src/ast_util.ml" 113 3303 3311 "src/ast_util.ml" 113 3303 3315
+type(
+  t
+)
+"src/ast_util.ml" 113 3303 3319 "src/ast_util.ml" 113 3303 3323
+type(
+  t
+)
+"src/ast_util.ml" 114 3324 3332 "src/ast_util.ml" 114 3324 3337
+type(
+  t
+)
+"src/ast_util.ml" 114 3324 3341 "src/ast_util.ml" 114 3324 3346
+type(
+  t
+)
+"src/ast_util.ml" 115 3347 3362 "src/ast_util.ml" 115 3347 3367
+type(
+  relop
+)
+ident(
+  def relop "src/ast_util.ml" 115 3347 3385 "src/ast_util.ml" 116 3393 3455
+)
+"src/ast_util.ml" 115 3347 3369 "src/ast_util.ml" 115 3347 3373
+type(
+  t
+)
+ident(
+  def left "src/ast_util.ml" 115 3347 3385 "src/ast_util.ml" 116 3393 3455
+)
+"src/ast_util.ml" 115 3347 3375 "src/ast_util.ml" 115 3347 3380
+type(
+  t
+)
+ident(
+  def right "src/ast_util.ml" 115 3347 3385 "src/ast_util.ml" 116 3393 3455
+)
+"src/ast_util.ml" 115 3347 3361 "src/ast_util.ml" 115 3347 3381
+type(
+  Ast.Expr.t.Relop
+)
+"src/ast_util.ml" 115 3347 3355 "src/ast_util.ml" 115 3347 3381
+type(
+  t
+)
+"src/ast_util.ml" 116 3393 3401 "src/ast_util.ml" 116 3393 3406
+type(
+  relop
+)
+ident(
+  int_ref relop "src/ast_util.ml" 115 3347 3362 "src/ast_util.ml" 115 3347 3367
+)
+"src/ast_util.ml" 116 3393 3415 "src/ast_util.ml" 116 3393 3418
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 116 3393 3419 "src/ast_util.ml" 116 3393 3424
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 116 3393 3425 "src/ast_util.ml" 116 3393 3429
+type(
+  t
+)
+ident(
+  int_ref left "src/ast_util.ml" 115 3347 3369 "src/ast_util.ml" 115 3347 3373
+)
+"src/ast_util.ml" 116 3393 3415 "src/ast_util.ml" 116 3393 3429
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 116 3393 3439 "src/ast_util.ml" 116 3393 3442
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 116 3393 3443 "src/ast_util.ml" 116 3393 3448
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 116 3393 3449 "src/ast_util.ml" 116 3393 3454
+type(
+  t
+)
+ident(
+  int_ref right "src/ast_util.ml" 115 3347 3375 "src/ast_util.ml" 115 3347 3380
+)
+"src/ast_util.ml" 116 3393 3439 "src/ast_util.ml" 116 3393 3454
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 115 3347 3391 "src/ast_util.ml" 116 3393 3455
+type(
+  Ast.Expr.t.Relop
+)
+"src/ast_util.ml" 115 3347 3385 "src/ast_util.ml" 116 3393 3455
+type(
+  t
+)
+"src/ast_util.ml" 117 3462 3474 "src/ast_util.ml" 117 3462 3478
+type(
+  t
+)
+ident(
+  def cond "src/ast_util.ml" 117 3462 3497 "src/ast_util.ml" 120 3565 3600
+)
+"src/ast_util.ml" 117 3462 3481 "src/ast_util.ml" 117 3462 3486
+type(
+  t
+)
+ident(
+  def then_ "src/ast_util.ml" 117 3462 3497 "src/ast_util.ml" 120 3565 3600
+)
+"src/ast_util.ml" 117 3462 3487 "src/ast_util.ml" 117 3462 3492
+type(
+  t
+)
+ident(
+  def else_ "src/ast_util.ml" 117 3462 3497 "src/ast_util.ml" 120 3565 3600
+)
+"src/ast_util.ml" 117 3462 3473 "src/ast_util.ml" 117 3462 3493
+type(
+  Ast.Expr.t.If
+)
+"src/ast_util.ml" 117 3462 3470 "src/ast_util.ml" 117 3462 3493
+type(
+  t
+)
+"src/ast_util.ml" 118 3501 3516 "src/ast_util.ml" 118 3501 3519
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 118 3501 3520 "src/ast_util.ml" 118 3501 3525
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 118 3501 3526 "src/ast_util.ml" 118 3501 3530
+type(
+  t
+)
+ident(
+  int_ref cond "src/ast_util.ml" 117 3462 3474 "src/ast_util.ml" 117 3462 3478
+)
+"src/ast_util.ml" 118 3501 3516 "src/ast_util.ml" 118 3501 3530
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 119 3532 3548 "src/ast_util.ml" 119 3532 3551
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 119 3532 3552 "src/ast_util.ml" 119 3532 3557
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 119 3532 3558 "src/ast_util.ml" 119 3532 3563
+type(
+  t
+)
+ident(
+  int_ref then_ "src/ast_util.ml" 117 3462 3481 "src/ast_util.ml" 117 3462 3486
+)
+"src/ast_util.ml" 119 3532 3548 "src/ast_util.ml" 119 3532 3563
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 120 3565 3581 "src/ast_util.ml" 120 3565 3584
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 120 3565 3585 "src/ast_util.ml" 120 3565 3590
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 120 3565 3591 "src/ast_util.ml" 120 3565 3596
+type(
+  t
+)
+ident(
+  int_ref else_ "src/ast_util.ml" 117 3462 3487 "src/ast_util.ml" 117 3462 3492
+)
+"src/ast_util.ml" 120 3565 3581 "src/ast_util.ml" 120 3565 3596
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 117 3462 3499 "src/ast_util.ml" 120 3565 3600
+type(
+  Ast.Expr.t.If
+)
+"src/ast_util.ml" 117 3462 3497 "src/ast_util.ml" 120 3565 3600
+type(
+  t
+)
+"src/ast_util.ml" 121 3607 3620 "src/ast_util.ml" 121 3607 3624
+type(
+  t
+)
+ident(
+  def left "src/ast_util.ml" 121 3607 3637 "src/ast_util.ml" 121 3607 3690
+)
+"src/ast_util.ml" 121 3607 3627 "src/ast_util.ml" 121 3607 3632
+type(
+  t
+)
+ident(
+  def right "src/ast_util.ml" 121 3607 3637 "src/ast_util.ml" 121 3607 3690
+)
+"src/ast_util.ml" 121 3607 3619 "src/ast_util.ml" 121 3607 3633
+type(
+  Ast.Expr.t.And
+)
+"src/ast_util.ml" 121 3607 3615 "src/ast_util.ml" 121 3607 3633
+type(
+  t
+)
+"src/ast_util.ml" 121 3607 3649 "src/ast_util.ml" 121 3607 3652
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 121 3607 3653 "src/ast_util.ml" 121 3607 3658
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 121 3607 3659 "src/ast_util.ml" 121 3607 3663
+type(
+  t
+)
+ident(
+  int_ref left "src/ast_util.ml" 121 3607 3620 "src/ast_util.ml" 121 3607 3624
+)
+"src/ast_util.ml" 121 3607 3649 "src/ast_util.ml" 121 3607 3663
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 121 3607 3673 "src/ast_util.ml" 121 3607 3676
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 121 3607 3677 "src/ast_util.ml" 121 3607 3682
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 121 3607 3683 "src/ast_util.ml" 121 3607 3688
+type(
+  t
+)
+ident(
+  int_ref right "src/ast_util.ml" 121 3607 3627 "src/ast_util.ml" 121 3607 3632
+)
+"src/ast_util.ml" 121 3607 3673 "src/ast_util.ml" 121 3607 3688
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 121 3607 3641 "src/ast_util.ml" 121 3607 3690
+type(
+  Ast.Expr.t.And
+)
+"src/ast_util.ml" 121 3607 3637 "src/ast_util.ml" 121 3607 3690
+type(
+  t
+)
+"src/ast_util.ml" 122 3691 3703 "src/ast_util.ml" 122 3691 3707
+type(
+  t
+)
+ident(
+  def left "src/ast_util.ml" 122 3691 3720 "src/ast_util.ml" 122 3691 3770
+)
+"src/ast_util.ml" 122 3691 3710 "src/ast_util.ml" 122 3691 3715
+type(
+  t
+)
+ident(
+  def right "src/ast_util.ml" 122 3691 3720 "src/ast_util.ml" 122 3691 3770
+)
+"src/ast_util.ml" 122 3691 3702 "src/ast_util.ml" 122 3691 3716
+type(
+  Ast.Expr.t.Or
+)
+"src/ast_util.ml" 122 3691 3699 "src/ast_util.ml" 122 3691 3716
+type(
+  t
+)
+"src/ast_util.ml" 122 3691 3730 "src/ast_util.ml" 122 3691 3733
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 122 3691 3734 "src/ast_util.ml" 122 3691 3739
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 122 3691 3740 "src/ast_util.ml" 122 3691 3744
+type(
+  t
+)
+ident(
+  int_ref left "src/ast_util.ml" 122 3691 3703 "src/ast_util.ml" 122 3691 3707
+)
+"src/ast_util.ml" 122 3691 3730 "src/ast_util.ml" 122 3691 3744
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 122 3691 3754 "src/ast_util.ml" 122 3691 3757
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 122 3691 3758 "src/ast_util.ml" 122 3691 3763
+type(
+  int String.Map.t
+)
+ident(
+  int_ref depth "src/ast_util.ml" 106 3045 3062 "src/ast_util.ml" 106 3045 3067
+)
+"src/ast_util.ml" 122 3691 3764 "src/ast_util.ml" 122 3691 3769
+type(
+  t
+)
+ident(
+  int_ref right "src/ast_util.ml" 122 3691 3710 "src/ast_util.ml" 122 3691 3715
+)
+"src/ast_util.ml" 122 3691 3754 "src/ast_util.ml" 122 3691 3769
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 122 3691 3722 "src/ast_util.ml" 122 3691 3770
+type(
+  Ast.Expr.t.Or
+)
+"src/ast_util.ml" 122 3691 3720 "src/ast_util.ml" 122 3691 3770
+type(
+  t
+)
+"src/ast_util.ml" 123 3771 3779 "src/ast_util.ml" 123 3771 3780
+type(
+  t
+)
+"src/ast_util.ml" 123 3771 3784 "src/ast_util.ml" 123 3771 3789
+type(
+  exn -> t
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/ast_util.ml" 123 3771 3790 "src/ast_util.ml" 123 3771 3803
+type(
+  exn
+)
+"src/ast_util.ml" 123 3771 3784 "src/ast_util.ml" 123 3771 3803
+type(
+  t
+)
+"src/ast_util.ml" 107 3102 3108 "src/ast_util.ml" 123 3771 3803
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 125 3811 3815 "src/ast_util.ml" 125 3811 3818
+type(
+  int String.Map.t -> t -> t
+)
+ident(
+  int_ref aux "src/ast_util.ml" 106 3045 3057 "src/ast_util.ml" 106 3045 3060
+)
+"src/ast_util.ml" 125 3811 3819 "src/ast_util.ml" 125 3811 3835
+type(
+  int String.Map.t
+)
+ident(
+  int_ref Core.String.Map.empty "src/map_intf.ml" 1152 39465 39467 "src/map_intf.ml" 1152 39465 39492
+)
+"src/ast_util.ml" 125 3811 3836 "src/ast_util.ml" 125 3811 3837
+type(
+  t
+)
+ident(
+  int_ref e "src/ast_util.ml" 105 3009 3032 "src/ast_util.ml" 105 3009 3033
+)
+"src/ast_util.ml" 125 3811 3815 "src/ast_util.ml" 125 3811 3837
+call(
+  tail
+)
+type(
+  t
+)
+"src/ast_util.ml" 106 3045 3049 "src/ast_util.ml" 125 3811 3837
+type(
+  t
+)
+type(
+  t
+)
+"src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+type(
+  t -> t -> bool
+)
+ident(
+  def aequiv "src/ast_util.ml" 168 5357 5359 "src/ast_util.ml" 196 6291 6294
+)
+"src/ast_util.ml" 127 3839 3853 "src/ast_util.ml" 127 3839 3855
+type(
+  t
+)
+ident(
+  def e1 "src/ast_util.ml" 127 3839 3861 "src/ast_util.ml" 166 5314 5355
+)
+"src/ast_util.ml" 127 3839 3862 "src/ast_util.ml" 127 3839 3864
+type(
+  t
+)
+ident(
+  def e2 "src/ast_util.ml" 127 3839 3870 "src/ast_util.ml" 166 5314 5355
+)
+"src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+type(
+  t -> t -> bool
+)
+ident(
+  def aux "src/ast_util.ml" 128 3879 3883 "src/ast_util.ml" 166 5314 5355
+)
+"src/ast_util.ml" 128 3879 3896 "src/ast_util.ml" 128 3879 3898
+type(
+  t
+)
+ident(
+  def e1 "src/ast_util.ml" 128 3879 3904 "src/ast_util.ml" 164 5288 5306
+)
+"src/ast_util.ml" 128 3879 3905 "src/ast_util.ml" 128 3879 3907
+type(
+  t
+)
+ident(
+  def e2 "src/ast_util.ml" 128 3879 3913 "src/ast_util.ml" 164 5288 5306
+)
+"src/ast_util.ml" 129 3922 3935 "src/ast_util.ml" 129 3922 3937
+type(
+  t
+)
+ident(
+  int_ref e1 "src/ast_util.ml" 128 3879 3896 "src/ast_util.ml" 128 3879 3898
+)
+"src/ast_util.ml" 129 3922 3939 "src/ast_util.ml" 129 3922 3941
+type(
+  t
+)
+ident(
+  int_ref e2 "src/ast_util.ml" 128 3879 3905 "src/ast_util.ml" 128 3879 3907
+)
+"src/ast_util.ml" 129 3922 3934 "src/ast_util.ml" 129 3922 3942
+type(
+  t * t
+)
+"src/ast_util.ml" 130 3948 3961 "src/ast_util.ml" 130 3948 3963
+type(
+  int
+)
+ident(
+  def n1 "src/ast_util.ml" 130 3948 3976 "src/ast_util.ml" 130 3948 3983
+)
+"src/ast_util.ml" 130 3948 3957 "src/ast_util.ml" 130 3948 3963
+type(
+  t
+)
+"src/ast_util.ml" 130 3948 3969 "src/ast_util.ml" 130 3948 3971
+type(
+  int
+)
+ident(
+  def n2 "src/ast_util.ml" 130 3948 3976 "src/ast_util.ml" 130 3948 3983
+)
+"src/ast_util.ml" 130 3948 3965 "src/ast_util.ml" 130 3948 3971
+type(
+  t
+)
+"src/ast_util.ml" 130 3948 3956 "src/ast_util.ml" 130 3948 3972
+type(
+  t * t
+)
+"src/ast_util.ml" 130 3948 3976 "src/ast_util.ml" 130 3948 3978
+type(
+  int
+)
+ident(
+  int_ref n1 "src/ast_util.ml" 130 3948 3961 "src/ast_util.ml" 130 3948 3963
+)
+"src/ast_util.ml" 130 3948 3979 "src/ast_util.ml" 130 3948 3980
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 130 3948 3981 "src/ast_util.ml" 130 3948 3983
+type(
+  int
+)
+ident(
+  int_ref n2 "src/ast_util.ml" 130 3948 3969 "src/ast_util.ml" 130 3948 3971
+)
+"src/ast_util.ml" 130 3948 3976 "src/ast_util.ml" 130 3948 3983
+type(
+  bool
+)
+"src/ast_util.ml" 131 3984 3997 "src/ast_util.ml" 131 3984 3998
+type(
+  string
+)
+ident(
+  def x "src/ast_util.ml" 131 3984 4010 "src/ast_util.ml" 131 3984 4015
+)
+"src/ast_util.ml" 131 3984 3993 "src/ast_util.ml" 131 3984 3998
+type(
+  t
+)
+"src/ast_util.ml" 131 3984 4004 "src/ast_util.ml" 131 3984 4005
+type(
+  string
+)
+ident(
+  def y "src/ast_util.ml" 131 3984 4010 "src/ast_util.ml" 131 3984 4015
+)
+"src/ast_util.ml" 131 3984 4000 "src/ast_util.ml" 131 3984 4005
+type(
+  t
+)
+"src/ast_util.ml" 131 3984 3992 "src/ast_util.ml" 131 3984 4006
+type(
+  t * t
+)
+"src/ast_util.ml" 131 3984 4010 "src/ast_util.ml" 131 3984 4011
+type(
+  string
+)
+ident(
+  int_ref x "src/ast_util.ml" 131 3984 3997 "src/ast_util.ml" 131 3984 3998
+)
+"src/ast_util.ml" 131 3984 4012 "src/ast_util.ml" 131 3984 4013
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 131 3984 4014 "src/ast_util.ml" 131 3984 4015
+type(
+  string
+)
+ident(
+  int_ref y "src/ast_util.ml" 131 3984 4004 "src/ast_util.ml" 131 3984 4005
+)
+"src/ast_util.ml" 131 3984 4010 "src/ast_util.ml" 131 3984 4015
+type(
+  bool
+)
+"src/ast_util.ml" 132 4016 4031 "src/ast_util.ml" 132 4016 4032
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  def l "src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4115
+)
+"src/ast_util.ml" 132 4016 4025 "src/ast_util.ml" 132 4016 4032
+type(
+  t
+)
+"src/ast_util.ml" 132 4016 4040 "src/ast_util.ml" 132 4016 4041
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  def r "src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4115
+)
+"src/ast_util.ml" 132 4016 4034 "src/ast_util.ml" 132 4016 4041
+type(
+  t
+)
+"src/ast_util.ml" 132 4016 4024 "src/ast_util.ml" 132 4016 4042
+type(
+  t * t
+)
+"src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4055
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref l "src/ast_util.ml" 132 4016 4031 "src/ast_util.ml" 132 4016 4032
+)
+"src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4061
+type(
+  binop
+)
+"src/ast_util.ml" 133 4046 4062 "src/ast_util.ml" 133 4046 4063
+type(
+  binop -> binop -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 133 4046 4064 "src/ast_util.ml" 133 4046 4065
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref r "src/ast_util.ml" 132 4016 4040 "src/ast_util.ml" 132 4016 4041
+)
+"src/ast_util.ml" 133 4046 4064 "src/ast_util.ml" 133 4046 4071
+type(
+  binop
+)
+"src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4071
+type(
+  bool
+)
+"src/ast_util.ml" 133 4046 4072 "src/ast_util.ml" 133 4046 4074
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 133 4046 4075 "src/ast_util.ml" 133 4046 4078
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 133 4046 4079 "src/ast_util.ml" 133 4046 4080
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref l "src/ast_util.ml" 132 4016 4031 "src/ast_util.ml" 132 4016 4032
+)
+"src/ast_util.ml" 133 4046 4079 "src/ast_util.ml" 133 4046 4085
+type(
+  t
+)
+"src/ast_util.ml" 133 4046 4086 "src/ast_util.ml" 133 4046 4087
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref r "src/ast_util.ml" 132 4016 4040 "src/ast_util.ml" 132 4016 4041
+)
+"src/ast_util.ml" 133 4046 4086 "src/ast_util.ml" 133 4046 4092
+type(
+  t
+)
+"src/ast_util.ml" 133 4046 4075 "src/ast_util.ml" 133 4046 4092
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 133 4046 4093 "src/ast_util.ml" 133 4046 4095
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 133 4046 4096 "src/ast_util.ml" 133 4046 4099
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 133 4046 4100 "src/ast_util.ml" 133 4046 4101
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref l "src/ast_util.ml" 132 4016 4031 "src/ast_util.ml" 132 4016 4032
+)
+"src/ast_util.ml" 133 4046 4100 "src/ast_util.ml" 133 4046 4107
+type(
+  t
+)
+"src/ast_util.ml" 133 4046 4108 "src/ast_util.ml" 133 4046 4109
+type(
+  Ast.Expr.t.Binop
+)
+ident(
+  int_ref r "src/ast_util.ml" 132 4016 4040 "src/ast_util.ml" 132 4016 4041
+)
+"src/ast_util.ml" 133 4046 4108 "src/ast_util.ml" 133 4046 4115
+type(
+  t
+)
+"src/ast_util.ml" 133 4046 4096 "src/ast_util.ml" 133 4046 4115
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 133 4046 4075 "src/ast_util.ml" 133 4046 4115
+type(
+  bool
+)
+"src/ast_util.ml" 133 4046 4054 "src/ast_util.ml" 133 4046 4115
+type(
+  bool
+)
+"src/ast_util.ml" 134 4116 4125 "src/ast_util.ml" 134 4116 4129
+type(
+  t
+)
+"src/ast_util.ml" 134 4116 4131 "src/ast_util.ml" 134 4116 4135
+type(
+  t
+)
+"src/ast_util.ml" 134 4116 4124 "src/ast_util.ml" 134 4116 4136
+type(
+  t * t
+)
+"src/ast_util.ml" 134 4116 4140 "src/ast_util.ml" 134 4116 4145
+type(
+  t
+)
+"src/ast_util.ml" 134 4116 4147 "src/ast_util.ml" 134 4116 4152
+type(
+  t
+)
+"src/ast_util.ml" 134 4116 4139 "src/ast_util.ml" 134 4116 4153
+type(
+  t * t
+)
+"src/ast_util.ml" 134 4116 4124 "src/ast_util.ml" 134 4116 4153
+type(
+  t * t
+)
+"src/ast_util.ml" 134 4116 4157 "src/ast_util.ml" 134 4116 4161
+type(
+  bool
+)
+"src/ast_util.ml" 135 4162 4174 "src/ast_util.ml" 135 4162 4175
+type(
+  Ast.Expr.t.If
+)
+ident(
+  def l "src/ast_util.ml" 136 4186 4194 "src/ast_util.ml" 136 4186 4257
+)
+"src/ast_util.ml" 135 4162 4171 "src/ast_util.ml" 135 4162 4175
+type(
+  t
+)
+"src/ast_util.ml" 135 4162 4180 "src/ast_util.ml" 135 4162 4181
+type(
+  Ast.Expr.t.If
+)
+ident(
+  def r "src/ast_util.ml" 136 4186 4194 "src/ast_util.ml" 136 4186 4257
+)
+"src/ast_util.ml" 135 4162 4177 "src/ast_util.ml" 135 4162 4181
+type(
+  t
+)
+"src/ast_util.ml" 135 4162 4170 "src/ast_util.ml" 135 4162 4182
+type(
+  t * t
+)
+"src/ast_util.ml" 136 4186 4194 "src/ast_util.ml" 136 4186 4197
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 136 4186 4198 "src/ast_util.ml" 136 4186 4199
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref l "src/ast_util.ml" 135 4162 4174 "src/ast_util.ml" 135 4162 4175
+)
+"src/ast_util.ml" 136 4186 4198 "src/ast_util.ml" 136 4186 4204
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4205 "src/ast_util.ml" 136 4186 4206
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref r "src/ast_util.ml" 135 4162 4180 "src/ast_util.ml" 135 4162 4181
+)
+"src/ast_util.ml" 136 4186 4205 "src/ast_util.ml" 136 4186 4211
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4194 "src/ast_util.ml" 136 4186 4211
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 136 4186 4212 "src/ast_util.ml" 136 4186 4214
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 136 4186 4215 "src/ast_util.ml" 136 4186 4218
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 136 4186 4219 "src/ast_util.ml" 136 4186 4220
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref l "src/ast_util.ml" 135 4162 4174 "src/ast_util.ml" 135 4162 4175
+)
+"src/ast_util.ml" 136 4186 4219 "src/ast_util.ml" 136 4186 4226
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4227 "src/ast_util.ml" 136 4186 4228
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref r "src/ast_util.ml" 135 4162 4180 "src/ast_util.ml" 135 4162 4181
+)
+"src/ast_util.ml" 136 4186 4227 "src/ast_util.ml" 136 4186 4234
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4215 "src/ast_util.ml" 136 4186 4234
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 136 4186 4235 "src/ast_util.ml" 136 4186 4237
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 136 4186 4238 "src/ast_util.ml" 136 4186 4241
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 136 4186 4242 "src/ast_util.ml" 136 4186 4243
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref l "src/ast_util.ml" 135 4162 4174 "src/ast_util.ml" 135 4162 4175
+)
+"src/ast_util.ml" 136 4186 4242 "src/ast_util.ml" 136 4186 4249
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4250 "src/ast_util.ml" 136 4186 4251
+type(
+  Ast.Expr.t.If
+)
+ident(
+  int_ref r "src/ast_util.ml" 135 4162 4180 "src/ast_util.ml" 135 4162 4181
+)
+"src/ast_util.ml" 136 4186 4250 "src/ast_util.ml" 136 4186 4257
+type(
+  t
+)
+"src/ast_util.ml" 136 4186 4238 "src/ast_util.ml" 136 4186 4257
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 136 4186 4215 "src/ast_util.ml" 136 4186 4257
+type(
+  bool
+)
+"src/ast_util.ml" 136 4186 4194 "src/ast_util.ml" 136 4186 4257
+type(
+  bool
+)
+"src/ast_util.ml" 137 4258 4273 "src/ast_util.ml" 137 4258 4274
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  def l "src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4357
+)
+"src/ast_util.ml" 137 4258 4267 "src/ast_util.ml" 137 4258 4274
+type(
+  t
+)
+"src/ast_util.ml" 137 4258 4282 "src/ast_util.ml" 137 4258 4283
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  def r "src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4357
+)
+"src/ast_util.ml" 137 4258 4276 "src/ast_util.ml" 137 4258 4283
+type(
+  t
+)
+"src/ast_util.ml" 137 4258 4266 "src/ast_util.ml" 137 4258 4284
+type(
+  t * t
+)
+"src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4297
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref l "src/ast_util.ml" 137 4258 4273 "src/ast_util.ml" 137 4258 4274
+)
+"src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4303
+type(
+  relop
+)
+"src/ast_util.ml" 138 4288 4304 "src/ast_util.ml" 138 4288 4305
+type(
+  relop -> relop -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 138 4288 4306 "src/ast_util.ml" 138 4288 4307
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref r "src/ast_util.ml" 137 4258 4282 "src/ast_util.ml" 137 4258 4283
+)
+"src/ast_util.ml" 138 4288 4306 "src/ast_util.ml" 138 4288 4313
+type(
+  relop
+)
+"src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4313
+type(
+  bool
+)
+"src/ast_util.ml" 138 4288 4314 "src/ast_util.ml" 138 4288 4316
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 138 4288 4317 "src/ast_util.ml" 138 4288 4320
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 138 4288 4321 "src/ast_util.ml" 138 4288 4322
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref l "src/ast_util.ml" 137 4258 4273 "src/ast_util.ml" 137 4258 4274
+)
+"src/ast_util.ml" 138 4288 4321 "src/ast_util.ml" 138 4288 4327
+type(
+  t
+)
+"src/ast_util.ml" 138 4288 4328 "src/ast_util.ml" 138 4288 4329
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref r "src/ast_util.ml" 137 4258 4282 "src/ast_util.ml" 137 4258 4283
+)
+"src/ast_util.ml" 138 4288 4328 "src/ast_util.ml" 138 4288 4334
+type(
+  t
+)
+"src/ast_util.ml" 138 4288 4317 "src/ast_util.ml" 138 4288 4334
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 138 4288 4335 "src/ast_util.ml" 138 4288 4337
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 138 4288 4338 "src/ast_util.ml" 138 4288 4341
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 138 4288 4342 "src/ast_util.ml" 138 4288 4343
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref l "src/ast_util.ml" 137 4258 4273 "src/ast_util.ml" 137 4258 4274
+)
+"src/ast_util.ml" 138 4288 4342 "src/ast_util.ml" 138 4288 4349
+type(
+  t
+)
+"src/ast_util.ml" 138 4288 4350 "src/ast_util.ml" 138 4288 4351
+type(
+  Ast.Expr.t.Relop
+)
+ident(
+  int_ref r "src/ast_util.ml" 137 4258 4282 "src/ast_util.ml" 137 4258 4283
+)
+"src/ast_util.ml" 138 4288 4350 "src/ast_util.ml" 138 4288 4357
+type(
+  t
+)
+"src/ast_util.ml" 138 4288 4338 "src/ast_util.ml" 138 4288 4357
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 138 4288 4317 "src/ast_util.ml" 138 4288 4357
+type(
+  bool
+)
+"src/ast_util.ml" 138 4288 4296 "src/ast_util.ml" 138 4288 4357
+type(
+  bool
+)
+"src/ast_util.ml" 139 4358 4371 "src/ast_util.ml" 139 4358 4372
+type(
+  Ast.Expr.t.And
+)
+ident(
+  def l "src/ast_util.ml" 140 4384 4392 "src/ast_util.ml" 140 4384 4432
+)
+"src/ast_util.ml" 139 4358 4367 "src/ast_util.ml" 139 4358 4372
+type(
+  t
+)
+"src/ast_util.ml" 139 4358 4378 "src/ast_util.ml" 139 4358 4379
+type(
+  Ast.Expr.t.And
+)
+ident(
+  def r "src/ast_util.ml" 140 4384 4392 "src/ast_util.ml" 140 4384 4432
+)
+"src/ast_util.ml" 139 4358 4374 "src/ast_util.ml" 139 4358 4379
+type(
+  t
+)
+"src/ast_util.ml" 139 4358 4366 "src/ast_util.ml" 139 4358 4380
+type(
+  t * t
+)
+"src/ast_util.ml" 140 4384 4392 "src/ast_util.ml" 140 4384 4395
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 140 4384 4396 "src/ast_util.ml" 140 4384 4397
+type(
+  Ast.Expr.t.And
+)
+ident(
+  int_ref l "src/ast_util.ml" 139 4358 4371 "src/ast_util.ml" 139 4358 4372
+)
+"src/ast_util.ml" 140 4384 4396 "src/ast_util.ml" 140 4384 4402
+type(
+  t
+)
+"src/ast_util.ml" 140 4384 4403 "src/ast_util.ml" 140 4384 4404
+type(
+  Ast.Expr.t.And
+)
+ident(
+  int_ref r "src/ast_util.ml" 139 4358 4378 "src/ast_util.ml" 139 4358 4379
+)
+"src/ast_util.ml" 140 4384 4403 "src/ast_util.ml" 140 4384 4409
+type(
+  t
+)
+"src/ast_util.ml" 140 4384 4392 "src/ast_util.ml" 140 4384 4409
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 140 4384 4410 "src/ast_util.ml" 140 4384 4412
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 140 4384 4413 "src/ast_util.ml" 140 4384 4416
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 140 4384 4417 "src/ast_util.ml" 140 4384 4418
+type(
+  Ast.Expr.t.And
+)
+ident(
+  int_ref l "src/ast_util.ml" 139 4358 4371 "src/ast_util.ml" 139 4358 4372
+)
+"src/ast_util.ml" 140 4384 4417 "src/ast_util.ml" 140 4384 4424
+type(
+  t
+)
+"src/ast_util.ml" 140 4384 4425 "src/ast_util.ml" 140 4384 4426
+type(
+  Ast.Expr.t.And
+)
+ident(
+  int_ref r "src/ast_util.ml" 139 4358 4378 "src/ast_util.ml" 139 4358 4379
+)
+"src/ast_util.ml" 140 4384 4425 "src/ast_util.ml" 140 4384 4432
+type(
+  t
+)
+"src/ast_util.ml" 140 4384 4413 "src/ast_util.ml" 140 4384 4432
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 140 4384 4392 "src/ast_util.ml" 140 4384 4432
+type(
+  bool
+)
+"src/ast_util.ml" 141 4433 4445 "src/ast_util.ml" 141 4433 4446
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  def l "src/ast_util.ml" 142 4457 4465 "src/ast_util.ml" 142 4457 4505
+)
+"src/ast_util.ml" 141 4433 4442 "src/ast_util.ml" 141 4433 4446
+type(
+  t
+)
+"src/ast_util.ml" 141 4433 4451 "src/ast_util.ml" 141 4433 4452
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  def r "src/ast_util.ml" 142 4457 4465 "src/ast_util.ml" 142 4457 4505
+)
+"src/ast_util.ml" 141 4433 4448 "src/ast_util.ml" 141 4433 4452
+type(
+  t
+)
+"src/ast_util.ml" 141 4433 4441 "src/ast_util.ml" 141 4433 4453
+type(
+  t * t
+)
+"src/ast_util.ml" 142 4457 4465 "src/ast_util.ml" 142 4457 4468
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 142 4457 4469 "src/ast_util.ml" 142 4457 4470
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  int_ref l "src/ast_util.ml" 141 4433 4445 "src/ast_util.ml" 141 4433 4446
+)
+"src/ast_util.ml" 142 4457 4469 "src/ast_util.ml" 142 4457 4475
+type(
+  t
+)
+"src/ast_util.ml" 142 4457 4476 "src/ast_util.ml" 142 4457 4477
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  int_ref r "src/ast_util.ml" 141 4433 4451 "src/ast_util.ml" 141 4433 4452
+)
+"src/ast_util.ml" 142 4457 4476 "src/ast_util.ml" 142 4457 4482
+type(
+  t
+)
+"src/ast_util.ml" 142 4457 4465 "src/ast_util.ml" 142 4457 4482
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 142 4457 4483 "src/ast_util.ml" 142 4457 4485
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 142 4457 4486 "src/ast_util.ml" 142 4457 4489
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 142 4457 4490 "src/ast_util.ml" 142 4457 4491
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  int_ref l "src/ast_util.ml" 141 4433 4445 "src/ast_util.ml" 141 4433 4446
+)
+"src/ast_util.ml" 142 4457 4490 "src/ast_util.ml" 142 4457 4497
+type(
+  t
+)
+"src/ast_util.ml" 142 4457 4498 "src/ast_util.ml" 142 4457 4499
+type(
+  Ast.Expr.t.Or
+)
+ident(
+  int_ref r "src/ast_util.ml" 141 4433 4451 "src/ast_util.ml" 141 4433 4452
+)
+"src/ast_util.ml" 142 4457 4498 "src/ast_util.ml" 142 4457 4505
+type(
+  t
+)
+"src/ast_util.ml" 142 4457 4486 "src/ast_util.ml" 142 4457 4505
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 142 4457 4465 "src/ast_util.ml" 142 4457 4505
+type(
+  bool
+)
+"src/ast_util.ml" 143 4506 4519 "src/ast_util.ml" 143 4506 4520
+type(
+  Ast.Expr.t.Lam
+)
+ident(
+  def l "src/ast_util.ml" 144 4532 4540 "src/ast_util.ml" 144 4532 4551
+)
+"src/ast_util.ml" 143 4506 4515 "src/ast_util.ml" 143 4506 4520
+type(
+  t
+)
+"src/ast_util.ml" 143 4506 4526 "src/ast_util.ml" 143 4506 4527
+type(
+  Ast.Expr.t.Lam
+)
+ident(
+  def r "src/ast_util.ml" 144 4532 4540 "src/ast_util.ml" 144 4532 4551
+)
+"src/ast_util.ml" 143 4506 4522 "src/ast_util.ml" 143 4506 4527
+type(
+  t
+)
+"src/ast_util.ml" 143 4506 4514 "src/ast_util.ml" 143 4506 4528
+type(
+  t * t
+)
+"src/ast_util.ml" 144 4532 4540 "src/ast_util.ml" 144 4532 4543
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 144 4532 4544 "src/ast_util.ml" 144 4532 4545
+type(
+  Ast.Expr.t.Lam
+)
+ident(
+  int_ref l "src/ast_util.ml" 143 4506 4519 "src/ast_util.ml" 143 4506 4520
+)
+"src/ast_util.ml" 144 4532 4544 "src/ast_util.ml" 144 4532 4547
+type(
+  t
+)
+"src/ast_util.ml" 144 4532 4548 "src/ast_util.ml" 144 4532 4549
+type(
+  Ast.Expr.t.Lam
+)
+ident(
+  int_ref r "src/ast_util.ml" 143 4506 4526 "src/ast_util.ml" 143 4506 4527
+)
+"src/ast_util.ml" 144 4532 4548 "src/ast_util.ml" 144 4532 4551
+type(
+  t
+)
+"src/ast_util.ml" 144 4532 4540 "src/ast_util.ml" 144 4532 4551
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 145 4552 4565 "src/ast_util.ml" 145 4552 4566
+type(
+  Ast.Expr.t.App
+)
+ident(
+  def l "src/ast_util.ml" 146 4578 4586 "src/ast_util.ml" 146 4578 4620
+)
+"src/ast_util.ml" 145 4552 4561 "src/ast_util.ml" 145 4552 4566
+type(
+  t
+)
+"src/ast_util.ml" 145 4552 4572 "src/ast_util.ml" 145 4552 4573
+type(
+  Ast.Expr.t.App
+)
+ident(
+  def r "src/ast_util.ml" 146 4578 4586 "src/ast_util.ml" 146 4578 4620
+)
+"src/ast_util.ml" 145 4552 4568 "src/ast_util.ml" 145 4552 4573
+type(
+  t
+)
+"src/ast_util.ml" 145 4552 4560 "src/ast_util.ml" 145 4552 4574
+type(
+  t * t
+)
+"src/ast_util.ml" 146 4578 4586 "src/ast_util.ml" 146 4578 4589
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 146 4578 4590 "src/ast_util.ml" 146 4578 4591
+type(
+  Ast.Expr.t.App
+)
+ident(
+  int_ref l "src/ast_util.ml" 145 4552 4565 "src/ast_util.ml" 145 4552 4566
+)
+"src/ast_util.ml" 146 4578 4590 "src/ast_util.ml" 146 4578 4595
+type(
+  t
+)
+"src/ast_util.ml" 146 4578 4596 "src/ast_util.ml" 146 4578 4597
+type(
+  Ast.Expr.t.App
+)
+ident(
+  int_ref r "src/ast_util.ml" 145 4552 4572 "src/ast_util.ml" 145 4552 4573
+)
+"src/ast_util.ml" 146 4578 4596 "src/ast_util.ml" 146 4578 4601
+type(
+  t
+)
+"src/ast_util.ml" 146 4578 4586 "src/ast_util.ml" 146 4578 4601
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 146 4578 4602 "src/ast_util.ml" 146 4578 4604
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 146 4578 4605 "src/ast_util.ml" 146 4578 4608
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 146 4578 4609 "src/ast_util.ml" 146 4578 4610
+type(
+  Ast.Expr.t.App
+)
+ident(
+  int_ref l "src/ast_util.ml" 145 4552 4565 "src/ast_util.ml" 145 4552 4566
+)
+"src/ast_util.ml" 146 4578 4609 "src/ast_util.ml" 146 4578 4614
+type(
+  t
+)
+"src/ast_util.ml" 146 4578 4615 "src/ast_util.ml" 146 4578 4616
+type(
+  Ast.Expr.t.App
+)
+ident(
+  int_ref r "src/ast_util.ml" 145 4552 4572 "src/ast_util.ml" 145 4552 4573
+)
+"src/ast_util.ml" 146 4578 4615 "src/ast_util.ml" 146 4578 4620
+type(
+  t
+)
+"src/ast_util.ml" 146 4578 4605 "src/ast_util.ml" 146 4578 4620
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 146 4578 4586 "src/ast_util.ml" 146 4578 4620
+type(
+  bool
+)
+"src/ast_util.ml" 147 4621 4630 "src/ast_util.ml" 147 4621 4634
+type(
+  t
+)
+"src/ast_util.ml" 147 4621 4636 "src/ast_util.ml" 147 4621 4640
+type(
+  t
+)
+"src/ast_util.ml" 147 4621 4629 "src/ast_util.ml" 147 4621 4641
+type(
+  t * t
+)
+"src/ast_util.ml" 147 4621 4645 "src/ast_util.ml" 147 4621 4649
+type(
+  bool
+)
+"src/ast_util.ml" 148 4650 4664 "src/ast_util.ml" 148 4650 4665
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  def l "src/ast_util.ml" 149 4678 4686 "src/ast_util.ml" 149 4678 4726
+)
+"src/ast_util.ml" 148 4650 4659 "src/ast_util.ml" 148 4650 4665
+type(
+  t
+)
+"src/ast_util.ml" 148 4650 4672 "src/ast_util.ml" 148 4650 4673
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  def r "src/ast_util.ml" 149 4678 4686 "src/ast_util.ml" 149 4678 4726
+)
+"src/ast_util.ml" 148 4650 4667 "src/ast_util.ml" 148 4650 4673
+type(
+  t
+)
+"src/ast_util.ml" 148 4650 4658 "src/ast_util.ml" 148 4650 4674
+type(
+  t * t
+)
+"src/ast_util.ml" 149 4678 4686 "src/ast_util.ml" 149 4678 4689
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 149 4678 4690 "src/ast_util.ml" 149 4678 4691
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  int_ref l "src/ast_util.ml" 148 4650 4664 "src/ast_util.ml" 148 4650 4665
+)
+"src/ast_util.ml" 149 4678 4690 "src/ast_util.ml" 149 4678 4696
+type(
+  t
+)
+"src/ast_util.ml" 149 4678 4697 "src/ast_util.ml" 149 4678 4698
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  int_ref r "src/ast_util.ml" 148 4650 4672 "src/ast_util.ml" 148 4650 4673
+)
+"src/ast_util.ml" 149 4678 4697 "src/ast_util.ml" 149 4678 4703
+type(
+  t
+)
+"src/ast_util.ml" 149 4678 4686 "src/ast_util.ml" 149 4678 4703
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 149 4678 4704 "src/ast_util.ml" 149 4678 4706
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 149 4678 4707 "src/ast_util.ml" 149 4678 4710
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 149 4678 4711 "src/ast_util.ml" 149 4678 4712
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  int_ref l "src/ast_util.ml" 148 4650 4664 "src/ast_util.ml" 148 4650 4665
+)
+"src/ast_util.ml" 149 4678 4711 "src/ast_util.ml" 149 4678 4718
+type(
+  t
+)
+"src/ast_util.ml" 149 4678 4719 "src/ast_util.ml" 149 4678 4720
+type(
+  Ast.Expr.t.Pair
+)
+ident(
+  int_ref r "src/ast_util.ml" 148 4650 4672 "src/ast_util.ml" 148 4650 4673
+)
+"src/ast_util.ml" 149 4678 4719 "src/ast_util.ml" 149 4678 4726
+type(
+  t
+)
+"src/ast_util.ml" 149 4678 4707 "src/ast_util.ml" 149 4678 4726
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 149 4678 4686 "src/ast_util.ml" 149 4678 4726
+type(
+  bool
+)
+"src/ast_util.ml" 150 4727 4744 "src/ast_util.ml" 150 4727 4745
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  def l "src/ast_util.ml" 151 4761 4769 "src/ast_util.ml" 151 4761 4793
+)
+"src/ast_util.ml" 150 4727 4736 "src/ast_util.ml" 150 4727 4745
+type(
+  t
+)
+"src/ast_util.ml" 150 4727 4755 "src/ast_util.ml" 150 4727 4756
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  def r "src/ast_util.ml" 151 4761 4769 "src/ast_util.ml" 151 4761 4793
+)
+"src/ast_util.ml" 150 4727 4747 "src/ast_util.ml" 150 4727 4756
+type(
+  t
+)
+"src/ast_util.ml" 150 4727 4735 "src/ast_util.ml" 150 4727 4757
+type(
+  t * t
+)
+"src/ast_util.ml" 151 4761 4769 "src/ast_util.ml" 151 4761 4772
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 151 4761 4773 "src/ast_util.ml" 151 4761 4774
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  int_ref l "src/ast_util.ml" 150 4727 4744 "src/ast_util.ml" 150 4727 4745
+)
+"src/ast_util.ml" 151 4761 4773 "src/ast_util.ml" 151 4761 4776
+type(
+  t
+)
+"src/ast_util.ml" 151 4761 4777 "src/ast_util.ml" 151 4761 4778
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  int_ref r "src/ast_util.ml" 150 4727 4755 "src/ast_util.ml" 150 4727 4756
+)
+"src/ast_util.ml" 151 4761 4777 "src/ast_util.ml" 151 4761 4780
+type(
+  t
+)
+"src/ast_util.ml" 151 4761 4769 "src/ast_util.ml" 151 4761 4780
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 151 4761 4781 "src/ast_util.ml" 151 4761 4783
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 151 4761 4784 "src/ast_util.ml" 151 4761 4785
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  int_ref l "src/ast_util.ml" 150 4727 4744 "src/ast_util.ml" 150 4727 4745
+)
+"src/ast_util.ml" 151 4761 4784 "src/ast_util.ml" 151 4761 4787
+type(
+  direction
+)
+"src/ast_util.ml" 151 4761 4788 "src/ast_util.ml" 151 4761 4789
+type(
+  direction -> direction -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 151 4761 4790 "src/ast_util.ml" 151 4761 4791
+type(
+  Ast.Expr.t.Project
+)
+ident(
+  int_ref r "src/ast_util.ml" 150 4727 4755 "src/ast_util.ml" 150 4727 4756
+)
+"src/ast_util.ml" 151 4761 4790 "src/ast_util.ml" 151 4761 4793
+type(
+  direction
+)
+"src/ast_util.ml" 151 4761 4784 "src/ast_util.ml" 151 4761 4793
+type(
+  bool
+)
+"src/ast_util.ml" 151 4761 4769 "src/ast_util.ml" 151 4761 4793
+type(
+  bool
+)
+"src/ast_util.ml" 152 4794 4810 "src/ast_util.ml" 152 4794 4811
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  def l "src/ast_util.ml" 153 4826 4834 "src/ast_util.ml" 153 4826 4858
+)
+"src/ast_util.ml" 152 4794 4803 "src/ast_util.ml" 152 4794 4811
+type(
+  t
+)
+"src/ast_util.ml" 152 4794 4820 "src/ast_util.ml" 152 4794 4821
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  def r "src/ast_util.ml" 153 4826 4834 "src/ast_util.ml" 153 4826 4858
+)
+"src/ast_util.ml" 152 4794 4813 "src/ast_util.ml" 152 4794 4821
+type(
+  t
+)
+"src/ast_util.ml" 152 4794 4802 "src/ast_util.ml" 152 4794 4822
+type(
+  t * t
+)
+"src/ast_util.ml" 153 4826 4834 "src/ast_util.ml" 153 4826 4837
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 153 4826 4838 "src/ast_util.ml" 153 4826 4839
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  int_ref l "src/ast_util.ml" 152 4794 4810 "src/ast_util.ml" 152 4794 4811
+)
+"src/ast_util.ml" 153 4826 4838 "src/ast_util.ml" 153 4826 4841
+type(
+  t
+)
+"src/ast_util.ml" 153 4826 4842 "src/ast_util.ml" 153 4826 4843
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  int_ref r "src/ast_util.ml" 152 4794 4820 "src/ast_util.ml" 152 4794 4821
+)
+"src/ast_util.ml" 153 4826 4842 "src/ast_util.ml" 153 4826 4845
+type(
+  t
+)
+"src/ast_util.ml" 153 4826 4834 "src/ast_util.ml" 153 4826 4845
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 153 4826 4846 "src/ast_util.ml" 153 4826 4848
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 153 4826 4849 "src/ast_util.ml" 153 4826 4850
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  int_ref l "src/ast_util.ml" 152 4794 4810 "src/ast_util.ml" 152 4794 4811
+)
+"src/ast_util.ml" 153 4826 4849 "src/ast_util.ml" 153 4826 4852
+type(
+  direction
+)
+"src/ast_util.ml" 153 4826 4853 "src/ast_util.ml" 153 4826 4854
+type(
+  direction -> direction -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/ast_util.ml" 153 4826 4855 "src/ast_util.ml" 153 4826 4856
+type(
+  Ast.Expr.t.Inject
+)
+ident(
+  int_ref r "src/ast_util.ml" 152 4794 4820 "src/ast_util.ml" 152 4794 4821
+)
+"src/ast_util.ml" 153 4826 4855 "src/ast_util.ml" 153 4826 4858
+type(
+  direction
+)
+"src/ast_util.ml" 153 4826 4849 "src/ast_util.ml" 153 4826 4858
+type(
+  bool
+)
+"src/ast_util.ml" 153 4826 4834 "src/ast_util.ml" 153 4826 4858
+type(
+  bool
+)
+"src/ast_util.ml" 154 4859 4873 "src/ast_util.ml" 154 4859 4874
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  def l "src/ast_util.ml" 155 4887 4895 "src/ast_util.ml" 155 4887 4954
+)
+"src/ast_util.ml" 154 4859 4868 "src/ast_util.ml" 154 4859 4874
+type(
+  t
+)
+"src/ast_util.ml" 154 4859 4881 "src/ast_util.ml" 154 4859 4882
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  def r "src/ast_util.ml" 155 4887 4895 "src/ast_util.ml" 155 4887 4954
+)
+"src/ast_util.ml" 154 4859 4876 "src/ast_util.ml" 154 4859 4882
+type(
+  t
+)
+"src/ast_util.ml" 154 4859 4867 "src/ast_util.ml" 154 4859 4883
+type(
+  t * t
+)
+"src/ast_util.ml" 155 4887 4895 "src/ast_util.ml" 155 4887 4898
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 155 4887 4899 "src/ast_util.ml" 155 4887 4900
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref l "src/ast_util.ml" 154 4859 4873 "src/ast_util.ml" 154 4859 4874
+)
+"src/ast_util.ml" 155 4887 4899 "src/ast_util.ml" 155 4887 4902
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4903 "src/ast_util.ml" 155 4887 4904
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref r "src/ast_util.ml" 154 4859 4881 "src/ast_util.ml" 154 4859 4882
+)
+"src/ast_util.ml" 155 4887 4903 "src/ast_util.ml" 155 4887 4906
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4895 "src/ast_util.ml" 155 4887 4906
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 155 4887 4907 "src/ast_util.ml" 155 4887 4909
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 155 4887 4910 "src/ast_util.ml" 155 4887 4913
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 155 4887 4914 "src/ast_util.ml" 155 4887 4915
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref l "src/ast_util.ml" 154 4859 4873 "src/ast_util.ml" 154 4859 4874
+)
+"src/ast_util.ml" 155 4887 4914 "src/ast_util.ml" 155 4887 4921
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4922 "src/ast_util.ml" 155 4887 4923
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref r "src/ast_util.ml" 154 4859 4881 "src/ast_util.ml" 154 4859 4882
+)
+"src/ast_util.ml" 155 4887 4922 "src/ast_util.ml" 155 4887 4929
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4910 "src/ast_util.ml" 155 4887 4929
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 155 4887 4930 "src/ast_util.ml" 155 4887 4932
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 155 4887 4933 "src/ast_util.ml" 155 4887 4936
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 155 4887 4937 "src/ast_util.ml" 155 4887 4938
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref l "src/ast_util.ml" 154 4859 4873 "src/ast_util.ml" 154 4859 4874
+)
+"src/ast_util.ml" 155 4887 4937 "src/ast_util.ml" 155 4887 4945
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4946 "src/ast_util.ml" 155 4887 4947
+type(
+  Ast.Expr.t.Case
+)
+ident(
+  int_ref r "src/ast_util.ml" 154 4859 4881 "src/ast_util.ml" 154 4859 4882
+)
+"src/ast_util.ml" 155 4887 4946 "src/ast_util.ml" 155 4887 4954
+type(
+  t
+)
+"src/ast_util.ml" 155 4887 4933 "src/ast_util.ml" 155 4887 4954
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 155 4887 4910 "src/ast_util.ml" 155 4887 4954
+type(
+  bool
+)
+"src/ast_util.ml" 155 4887 4895 "src/ast_util.ml" 155 4887 4954
+type(
+  bool
+)
+"src/ast_util.ml" 156 4955 4968 "src/ast_util.ml" 156 4955 4969
+type(
+  Ast.Expr.t.Fix
+)
+ident(
+  def l "src/ast_util.ml" 156 4955 4981 "src/ast_util.ml" 156 4955 4992
+)
+"src/ast_util.ml" 156 4955 4964 "src/ast_util.ml" 156 4955 4969
+type(
+  t
+)
+"src/ast_util.ml" 156 4955 4975 "src/ast_util.ml" 156 4955 4976
+type(
+  Ast.Expr.t.Fix
+)
+ident(
+  def r "src/ast_util.ml" 156 4955 4981 "src/ast_util.ml" 156 4955 4992
+)
+"src/ast_util.ml" 156 4955 4971 "src/ast_util.ml" 156 4955 4976
+type(
+  t
+)
+"src/ast_util.ml" 156 4955 4963 "src/ast_util.ml" 156 4955 4977
+type(
+  t * t
+)
+"src/ast_util.ml" 156 4955 4981 "src/ast_util.ml" 156 4955 4984
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 156 4955 4985 "src/ast_util.ml" 156 4955 4986
+type(
+  Ast.Expr.t.Fix
+)
+ident(
+  int_ref l "src/ast_util.ml" 156 4955 4968 "src/ast_util.ml" 156 4955 4969
+)
+"src/ast_util.ml" 156 4955 4985 "src/ast_util.ml" 156 4955 4988
+type(
+  t
+)
+"src/ast_util.ml" 156 4955 4989 "src/ast_util.ml" 156 4955 4990
+type(
+  Ast.Expr.t.Fix
+)
+ident(
+  int_ref r "src/ast_util.ml" 156 4955 4975 "src/ast_util.ml" 156 4955 4976
+)
+"src/ast_util.ml" 156 4955 4989 "src/ast_util.ml" 156 4955 4992
+type(
+  t
+)
+"src/ast_util.ml" 156 4955 4981 "src/ast_util.ml" 156 4955 4992
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 157 4993 5008 "src/ast_util.ml" 157 4993 5009
+type(
+  Ast.Expr.t.TyLam
+)
+ident(
+  def l "src/ast_util.ml" 158 5023 5031 "src/ast_util.ml" 158 5023 5042
+)
+"src/ast_util.ml" 157 4993 5002 "src/ast_util.ml" 157 4993 5009
+type(
+  t
+)
+"src/ast_util.ml" 157 4993 5017 "src/ast_util.ml" 157 4993 5018
+type(
+  Ast.Expr.t.TyLam
+)
+ident(
+  def r "src/ast_util.ml" 158 5023 5031 "src/ast_util.ml" 158 5023 5042
+)
+"src/ast_util.ml" 157 4993 5011 "src/ast_util.ml" 157 4993 5018
+type(
+  t
+)
+"src/ast_util.ml" 157 4993 5001 "src/ast_util.ml" 157 4993 5019
+type(
+  t * t
+)
+"src/ast_util.ml" 158 5023 5031 "src/ast_util.ml" 158 5023 5034
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 158 5023 5035 "src/ast_util.ml" 158 5023 5036
+type(
+  Ast.Expr.t.TyLam
+)
+ident(
+  int_ref l "src/ast_util.ml" 157 4993 5008 "src/ast_util.ml" 157 4993 5009
+)
+"src/ast_util.ml" 158 5023 5035 "src/ast_util.ml" 158 5023 5038
+type(
+  t
+)
+"src/ast_util.ml" 158 5023 5039 "src/ast_util.ml" 158 5023 5040
+type(
+  Ast.Expr.t.TyLam
+)
+ident(
+  int_ref r "src/ast_util.ml" 157 4993 5017 "src/ast_util.ml" 157 4993 5018
+)
+"src/ast_util.ml" 158 5023 5039 "src/ast_util.ml" 158 5023 5042
+type(
+  t
+)
+"src/ast_util.ml" 158 5023 5031 "src/ast_util.ml" 158 5023 5042
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 159 5043 5058 "src/ast_util.ml" 159 5043 5059
+type(
+  Ast.Expr.t.TyApp
+)
+ident(
+  def l "src/ast_util.ml" 159 5043 5073 "src/ast_util.ml" 159 5043 5084
+)
+"src/ast_util.ml" 159 5043 5052 "src/ast_util.ml" 159 5043 5059
+type(
+  t
+)
+"src/ast_util.ml" 159 5043 5067 "src/ast_util.ml" 159 5043 5068
+type(
+  Ast.Expr.t.TyApp
+)
+ident(
+  def r "src/ast_util.ml" 159 5043 5073 "src/ast_util.ml" 159 5043 5084
+)
+"src/ast_util.ml" 159 5043 5061 "src/ast_util.ml" 159 5043 5068
+type(
+  t
+)
+"src/ast_util.ml" 159 5043 5051 "src/ast_util.ml" 159 5043 5069
+type(
+  t * t
+)
+"src/ast_util.ml" 159 5043 5073 "src/ast_util.ml" 159 5043 5076
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 159 5043 5077 "src/ast_util.ml" 159 5043 5078
+type(
+  Ast.Expr.t.TyApp
+)
+ident(
+  int_ref l "src/ast_util.ml" 159 5043 5058 "src/ast_util.ml" 159 5043 5059
+)
+"src/ast_util.ml" 159 5043 5077 "src/ast_util.ml" 159 5043 5080
+type(
+  t
+)
+"src/ast_util.ml" 159 5043 5081 "src/ast_util.ml" 159 5043 5082
+type(
+  Ast.Expr.t.TyApp
+)
+ident(
+  int_ref r "src/ast_util.ml" 159 5043 5067 "src/ast_util.ml" 159 5043 5068
+)
+"src/ast_util.ml" 159 5043 5081 "src/ast_util.ml" 159 5043 5084
+type(
+  t
+)
+"src/ast_util.ml" 159 5043 5073 "src/ast_util.ml" 159 5043 5084
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 160 5085 5100 "src/ast_util.ml" 160 5085 5101
+type(
+  Ast.Expr.t.Fold_
+)
+ident(
+  def l "src/ast_util.ml" 160 5085 5115 "src/ast_util.ml" 160 5085 5126
+)
+"src/ast_util.ml" 160 5085 5094 "src/ast_util.ml" 160 5085 5101
+type(
+  t
+)
+"src/ast_util.ml" 160 5085 5109 "src/ast_util.ml" 160 5085 5110
+type(
+  Ast.Expr.t.Fold_
+)
+ident(
+  def r "src/ast_util.ml" 160 5085 5115 "src/ast_util.ml" 160 5085 5126
+)
+"src/ast_util.ml" 160 5085 5103 "src/ast_util.ml" 160 5085 5110
+type(
+  t
+)
+"src/ast_util.ml" 160 5085 5093 "src/ast_util.ml" 160 5085 5111
+type(
+  t * t
+)
+"src/ast_util.ml" 160 5085 5115 "src/ast_util.ml" 160 5085 5118
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 160 5085 5119 "src/ast_util.ml" 160 5085 5120
+type(
+  Ast.Expr.t.Fold_
+)
+ident(
+  int_ref l "src/ast_util.ml" 160 5085 5100 "src/ast_util.ml" 160 5085 5101
+)
+"src/ast_util.ml" 160 5085 5119 "src/ast_util.ml" 160 5085 5122
+type(
+  t
+)
+"src/ast_util.ml" 160 5085 5123 "src/ast_util.ml" 160 5085 5124
+type(
+  Ast.Expr.t.Fold_
+)
+ident(
+  int_ref r "src/ast_util.ml" 160 5085 5109 "src/ast_util.ml" 160 5085 5110
+)
+"src/ast_util.ml" 160 5085 5123 "src/ast_util.ml" 160 5085 5126
+type(
+  t
+)
+"src/ast_util.ml" 160 5085 5115 "src/ast_util.ml" 160 5085 5126
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 161 5127 5143 "src/ast_util.ml" 161 5127 5144
+type(
+  t
+)
+ident(
+  def l "src/ast_util.ml" 161 5127 5159 "src/ast_util.ml" 161 5127 5166
+)
+"src/ast_util.ml" 161 5127 5136 "src/ast_util.ml" 161 5127 5144
+type(
+  t
+)
+"src/ast_util.ml" 161 5127 5153 "src/ast_util.ml" 161 5127 5154
+type(
+  t
+)
+ident(
+  def r "src/ast_util.ml" 161 5127 5159 "src/ast_util.ml" 161 5127 5166
+)
+"src/ast_util.ml" 161 5127 5146 "src/ast_util.ml" 161 5127 5154
+type(
+  t
+)
+"src/ast_util.ml" 161 5127 5135 "src/ast_util.ml" 161 5127 5155
+type(
+  t * t
+)
+"src/ast_util.ml" 161 5127 5159 "src/ast_util.ml" 161 5127 5162
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 161 5127 5163 "src/ast_util.ml" 161 5127 5164
+type(
+  t
+)
+ident(
+  int_ref l "src/ast_util.ml" 161 5127 5143 "src/ast_util.ml" 161 5127 5144
+)
+"src/ast_util.ml" 161 5127 5165 "src/ast_util.ml" 161 5127 5166
+type(
+  t
+)
+ident(
+  int_ref r "src/ast_util.ml" 161 5127 5153 "src/ast_util.ml" 161 5127 5154
+)
+"src/ast_util.ml" 161 5127 5159 "src/ast_util.ml" 161 5127 5166
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 162 5167 5183 "src/ast_util.ml" 162 5167 5184
+type(
+  Ast.Expr.t.Export
+)
+ident(
+  def l "src/ast_util.ml" 162 5167 5199 "src/ast_util.ml" 162 5167 5210
+)
+"src/ast_util.ml" 162 5167 5176 "src/ast_util.ml" 162 5167 5184
+type(
+  t
+)
+"src/ast_util.ml" 162 5167 5193 "src/ast_util.ml" 162 5167 5194
+type(
+  Ast.Expr.t.Export
+)
+ident(
+  def r "src/ast_util.ml" 162 5167 5199 "src/ast_util.ml" 162 5167 5210
+)
+"src/ast_util.ml" 162 5167 5186 "src/ast_util.ml" 162 5167 5194
+type(
+  t
+)
+"src/ast_util.ml" 162 5167 5175 "src/ast_util.ml" 162 5167 5195
+type(
+  t * t
+)
+"src/ast_util.ml" 162 5167 5199 "src/ast_util.ml" 162 5167 5202
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 162 5167 5203 "src/ast_util.ml" 162 5167 5204
+type(
+  Ast.Expr.t.Export
+)
+ident(
+  int_ref l "src/ast_util.ml" 162 5167 5183 "src/ast_util.ml" 162 5167 5184
+)
+"src/ast_util.ml" 162 5167 5203 "src/ast_util.ml" 162 5167 5206
+type(
+  t
+)
+"src/ast_util.ml" 162 5167 5207 "src/ast_util.ml" 162 5167 5208
+type(
+  Ast.Expr.t.Export
+)
+ident(
+  int_ref r "src/ast_util.ml" 162 5167 5193 "src/ast_util.ml" 162 5167 5194
+)
+"src/ast_util.ml" 162 5167 5207 "src/ast_util.ml" 162 5167 5210
+type(
+  t
+)
+"src/ast_util.ml" 162 5167 5199 "src/ast_util.ml" 162 5167 5210
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 163 5211 5227 "src/ast_util.ml" 163 5211 5228
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  def l "src/ast_util.ml" 163 5211 5243 "src/ast_util.ml" 163 5211 5287
+)
+"src/ast_util.ml" 163 5211 5220 "src/ast_util.ml" 163 5211 5228
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5237 "src/ast_util.ml" 163 5211 5238
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  def r "src/ast_util.ml" 163 5211 5243 "src/ast_util.ml" 163 5211 5287
+)
+"src/ast_util.ml" 163 5211 5230 "src/ast_util.ml" 163 5211 5238
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5219 "src/ast_util.ml" 163 5211 5239
+type(
+  t * t
+)
+"src/ast_util.ml" 163 5211 5243 "src/ast_util.ml" 163 5211 5246
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 163 5211 5247 "src/ast_util.ml" 163 5211 5248
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  int_ref l "src/ast_util.ml" 163 5211 5227 "src/ast_util.ml" 163 5211 5228
+)
+"src/ast_util.ml" 163 5211 5247 "src/ast_util.ml" 163 5211 5254
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5255 "src/ast_util.ml" 163 5211 5256
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  int_ref r "src/ast_util.ml" 163 5211 5237 "src/ast_util.ml" 163 5211 5238
+)
+"src/ast_util.ml" 163 5211 5255 "src/ast_util.ml" 163 5211 5262
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5243 "src/ast_util.ml" 163 5211 5262
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 163 5211 5263 "src/ast_util.ml" 163 5211 5265
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Core.( && ) "src/core_pervasives.mli" 117 4625 4625 "src/core_pervasives.mli" 117 4625 4676
+)
+"src/ast_util.ml" 163 5211 5266 "src/ast_util.ml" 163 5211 5269
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 163 5211 5270 "src/ast_util.ml" 163 5211 5271
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  int_ref l "src/ast_util.ml" 163 5211 5227 "src/ast_util.ml" 163 5211 5228
+)
+"src/ast_util.ml" 163 5211 5270 "src/ast_util.ml" 163 5211 5278
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5279 "src/ast_util.ml" 163 5211 5280
+type(
+  Ast.Expr.t.Import
+)
+ident(
+  int_ref r "src/ast_util.ml" 163 5211 5237 "src/ast_util.ml" 163 5211 5238
+)
+"src/ast_util.ml" 163 5211 5279 "src/ast_util.ml" 163 5211 5287
+type(
+  t
+)
+"src/ast_util.ml" 163 5211 5266 "src/ast_util.ml" 163 5211 5287
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 163 5211 5243 "src/ast_util.ml" 163 5211 5287
+type(
+  bool
+)
+"src/ast_util.ml" 164 5288 5296 "src/ast_util.ml" 164 5288 5297
+type(
+  t * t
+)
+"src/ast_util.ml" 164 5288 5301 "src/ast_util.ml" 164 5288 5306
+type(
+  bool
+)
+"src/ast_util.ml" 129 3922 3928 "src/ast_util.ml" 164 5288 5306
+type(
+  bool
+)
+type(
+  bool
+)
+"src/ast_util.ml" 166 5314 5318 "src/ast_util.ml" 166 5314 5321
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aux "src/ast_util.ml" 128 3879 3891 "src/ast_util.ml" 128 3879 3894
+)
+"src/ast_util.ml" 166 5314 5323 "src/ast_util.ml" 166 5314 5334
+type(
+  t -> t
+)
+ident(
+  int_ref to_debruijn "src/ast_util.ml" 105 3009 3019 "src/ast_util.ml" 105 3009 3030
+)
+"src/ast_util.ml" 166 5314 5335 "src/ast_util.ml" 166 5314 5337
+type(
+  t
+)
+ident(
+  int_ref e1 "src/ast_util.ml" 127 3839 3853 "src/ast_util.ml" 127 3839 3855
+)
+"src/ast_util.ml" 166 5314 5322 "src/ast_util.ml" 166 5314 5338
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 166 5314 5340 "src/ast_util.ml" 166 5314 5351
+type(
+  t -> t
+)
+ident(
+  int_ref to_debruijn "src/ast_util.ml" 105 3009 3019 "src/ast_util.ml" 105 3009 3030
+)
+"src/ast_util.ml" 166 5314 5352 "src/ast_util.ml" 166 5314 5354
+type(
+  t
+)
+ident(
+  int_ref e2 "src/ast_util.ml" 127 3839 3862 "src/ast_util.ml" 127 3839 3864
+)
+"src/ast_util.ml" 166 5314 5339 "src/ast_util.ml" 166 5314 5355
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 166 5314 5318 "src/ast_util.ml" 166 5314 5355
+call(
+  tail
+)
+type(
+  bool
+)
+"src/ast_util.ml" 128 3879 3883 "src/ast_util.ml" 166 5314 5355
+type(
+  bool
+)
+type(
+  bool
+)
+"src/ast_util.ml" 168 5357 5363 "src/ast_util.ml" 168 5357 5375
+type(
+  unit -> unit
+)
+ident(
+  def inline_tests "src/ast_util.ml" 192 6178 6184 "src/ast_util.ml" 196 6291 6294
+)
+"src/ast_util.ml" 168 5357 5376 "src/ast_util.ml" 168 5357 5378
+type(
+  unit
+)
+"src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+type(
+  string -> t
+)
+ident(
+  def p "src/ast_util.ml" 170 5418 5422 "src/ast_util.ml" 192 6178 6184
+)
+"src/ast_util.ml" 169 5381 5393 "src/ast_util.ml" 169 5381 5414
+type(
+  string -> t
+)
+ident(
+  int_ref Parser.parse_expr_exn "src/parser.ml" 26 663 667 "src/parser.ml" 26 663 681
+)
+"src/ast_util.ml" 170 5418 5426 "src/ast_util.ml" 170 5418 5428
+type(
+  t
+)
+ident(
+  def t1 "src/ast_util.ml" 171 5461 5465 "src/ast_util.ml" 192 6178 6184
+)
+"src/ast_util.ml" 170 5418 5431 "src/ast_util.ml" 170 5418 5432
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 170 5418 5433 "src/ast_util.ml" 170 5418 5457
+type(
+  string
+)
+"src/ast_util.ml" 170 5418 5431 "src/ast_util.ml" 170 5418 5457
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 171 5461 5473 "src/ast_util.ml" 171 5461 5479
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 171 5461 5481 "src/ast_util.ml" 171 5461 5491
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 102 2906 2912 "src/ast_util.ml" 102 2906 2922
+)
+"src/ast_util.ml" 171 5461 5492 "src/ast_util.ml" 171 5461 5495
+type(
+  string
+)
+"src/ast_util.ml" 171 5461 5501 "src/ast_util.ml" 171 5461 5502
+type(
+  int
+)
+"src/ast_util.ml" 171 5461 5496 "src/ast_util.ml" 171 5461 5503
+type(
+  t
+)
+"src/ast_util.ml" 171 5461 5504 "src/ast_util.ml" 171 5461 5506
+type(
+  t
+)
+ident(
+  int_ref t1 "src/ast_util.ml" 170 5418 5426 "src/ast_util.ml" 170 5418 5428
+)
+"src/ast_util.ml" 171 5461 5480 "src/ast_util.ml" 171 5461 5507
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 171 5461 5508 "src/ast_util.ml" 171 5461 5510
+type(
+  t
+)
+ident(
+  int_ref t1 "src/ast_util.ml" 170 5418 5426 "src/ast_util.ml" 170 5418 5428
+)
+"src/ast_util.ml" 171 5461 5472 "src/ast_util.ml" 171 5461 5511
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 171 5461 5465 "src/ast_util.ml" 171 5461 5511
+type(
+  unit
+)
+"src/ast_util.ml" 172 5513 5525 "src/ast_util.ml" 172 5513 5531
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 172 5513 5533 "src/ast_util.ml" 172 5513 5543
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 102 2906 2912 "src/ast_util.ml" 102 2906 2922
+)
+"src/ast_util.ml" 172 5513 5544 "src/ast_util.ml" 172 5513 5547
+type(
+  string
+)
+"src/ast_util.ml" 172 5513 5553 "src/ast_util.ml" 172 5513 5554
+type(
+  int
+)
+"src/ast_util.ml" 172 5513 5548 "src/ast_util.ml" 172 5513 5555
+type(
+  t
+)
+"src/ast_util.ml" 172 5513 5556 "src/ast_util.ml" 172 5513 5558
+type(
+  t
+)
+ident(
+  int_ref t1 "src/ast_util.ml" 170 5418 5426 "src/ast_util.ml" 170 5418 5428
+)
+"src/ast_util.ml" 172 5513 5532 "src/ast_util.ml" 172 5513 5559
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 173 5560 5575 "src/ast_util.ml" 173 5560 5576
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 173 5560 5577 "src/ast_util.ml" 173 5560 5601
+type(
+  string
+)
+"src/ast_util.ml" 173 5560 5574 "src/ast_util.ml" 173 5560 5602
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 172 5513 5524 "src/ast_util.ml" 173 5560 5603
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 172 5513 5517 "src/ast_util.ml" 173 5560 5603
+type(
+  unit
+)
+"src/ast_util.ml" 175 5606 5614 "src/ast_util.ml" 175 5606 5616
+type(
+  t
+)
+ident(
+  def t2 "src/ast_util.ml" 176 5651 5655 "src/ast_util.ml" 192 6178 6184
+)
+"src/ast_util.ml" 175 5606 5619 "src/ast_util.ml" 175 5606 5620
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 175 5606 5621 "src/ast_util.ml" 175 5606 5647
+type(
+  string
+)
+"src/ast_util.ml" 175 5606 5619 "src/ast_util.ml" 175 5606 5647
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 176 5651 5663 "src/ast_util.ml" 176 5651 5669
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 177 5670 5685 "src/ast_util.ml" 177 5670 5695
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 102 2906 2912 "src/ast_util.ml" 102 2906 2922
+)
+"src/ast_util.ml" 177 5670 5696 "src/ast_util.ml" 177 5670 5699
+type(
+  string
+)
+"src/ast_util.ml" 177 5670 5705 "src/ast_util.ml" 177 5670 5706
+type(
+  int
+)
+"src/ast_util.ml" 177 5670 5700 "src/ast_util.ml" 177 5670 5707
+type(
+  t
+)
+"src/ast_util.ml" 177 5670 5708 "src/ast_util.ml" 177 5670 5710
+type(
+  t
+)
+ident(
+  int_ref t2 "src/ast_util.ml" 175 5606 5614 "src/ast_util.ml" 175 5606 5616
+)
+"src/ast_util.ml" 177 5670 5684 "src/ast_util.ml" 177 5670 5711
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 178 5712 5727 "src/ast_util.ml" 178 5712 5728
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 178 5712 5729 "src/ast_util.ml" 178 5712 5755
+type(
+  string
+)
+"src/ast_util.ml" 178 5712 5726 "src/ast_util.ml" 178 5712 5756
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 176 5651 5662 "src/ast_util.ml" 178 5712 5757
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 176 5651 5655 "src/ast_util.ml" 178 5712 5757
+type(
+  unit
+)
+"src/ast_util.ml" 179 5759 5771 "src/ast_util.ml" 179 5759 5777
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 179 5759 5779 "src/ast_util.ml" 179 5759 5789
+type(
+  string -> t -> t -> t
+)
+ident(
+  int_ref substitute "src/ast_util.ml" 102 2906 2912 "src/ast_util.ml" 102 2906 2922
+)
+"src/ast_util.ml" 179 5759 5790 "src/ast_util.ml" 179 5759 5793
+type(
+  string
+)
+"src/ast_util.ml" 179 5759 5799 "src/ast_util.ml" 179 5759 5800
+type(
+  int
+)
+"src/ast_util.ml" 179 5759 5794 "src/ast_util.ml" 179 5759 5801
+type(
+  t
+)
+"src/ast_util.ml" 179 5759 5802 "src/ast_util.ml" 179 5759 5804
+type(
+  t
+)
+ident(
+  int_ref t2 "src/ast_util.ml" 175 5606 5614 "src/ast_util.ml" 175 5606 5616
+)
+"src/ast_util.ml" 179 5759 5778 "src/ast_util.ml" 179 5759 5805
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 180 5806 5821 "src/ast_util.ml" 180 5806 5822
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 180 5806 5823 "src/ast_util.ml" 180 5806 5849
+type(
+  string
+)
+"src/ast_util.ml" 180 5806 5820 "src/ast_util.ml" 180 5806 5850
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 179 5759 5770 "src/ast_util.ml" 180 5806 5851
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 179 5759 5763 "src/ast_util.ml" 180 5806 5851
+type(
+  unit
+)
+"src/ast_util.ml" 182 5854 5866 "src/ast_util.ml" 182 5854 5872
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 182 5854 5874 "src/ast_util.ml" 182 5854 5875
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 182 5854 5876 "src/ast_util.ml" 182 5854 5896
+type(
+  string
+)
+"src/ast_util.ml" 182 5854 5873 "src/ast_util.ml" 182 5854 5897
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 182 5854 5899 "src/ast_util.ml" 182 5854 5900
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 182 5854 5901 "src/ast_util.ml" 182 5854 5921
+type(
+  string
+)
+"src/ast_util.ml" 182 5854 5898 "src/ast_util.ml" 182 5854 5922
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 182 5854 5865 "src/ast_util.ml" 182 5854 5923
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 182 5854 5858 "src/ast_util.ml" 182 5854 5923
+type(
+  unit
+)
+"src/ast_util.ml" 184 5926 5938 "src/ast_util.ml" 184 5926 5941
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/ast_util.ml" 184 5926 5943 "src/ast_util.ml" 184 5926 5949
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 184 5926 5951 "src/ast_util.ml" 184 5926 5952
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 184 5926 5953 "src/ast_util.ml" 184 5926 5994
+type(
+  string
+)
+"src/ast_util.ml" 184 5926 5950 "src/ast_util.ml" 184 5926 5995
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 185 5996 6016 "src/ast_util.ml" 185 5996 6017
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 185 5996 6018 "src/ast_util.ml" 185 5996 6059
+type(
+  string
+)
+"src/ast_util.ml" 185 5996 6015 "src/ast_util.ml" 185 5996 6060
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 184 5926 5942 "src/ast_util.ml" 185 5996 6061
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 184 5926 5937 "src/ast_util.ml" 185 5996 6062
+type(
+  bool
+)
+"src/ast_util.ml" 184 5926 5930 "src/ast_util.ml" 185 5996 6062
+type(
+  unit
+)
+"src/ast_util.ml" 188 6078 6084 "src/ast_util.ml" 188 6078 6090
+type(
+  t -> t -> bool
+)
+ident(
+  int_ref aequiv "src/ast_util.ml" 127 3839 3845 "src/ast_util.ml" 127 3839 3851
+)
+"src/ast_util.ml" 189 6091 6100 "src/ast_util.ml" 189 6091 6101
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 189 6091 6102 "src/ast_util.ml" 189 6091 6131
+type(
+  string
+)
+"src/ast_util.ml" 189 6091 6099 "src/ast_util.ml" 189 6091 6132
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 190 6133 6142 "src/ast_util.ml" 190 6133 6143
+type(
+  string -> t
+)
+ident(
+  int_ref p "src/ast_util.ml" 169 5381 5389 "src/ast_util.ml" 169 5381 5390
+)
+"src/ast_util.ml" 190 6133 6144 "src/ast_util.ml" 190 6133 6173
+type(
+  string
+)
+"src/ast_util.ml" 190 6133 6141 "src/ast_util.ml" 190 6133 6174
+call(
+  stack
+)
+type(
+  t
+)
+"src/ast_util.ml" 187 6065 6076 "src/ast_util.ml" 190 6133 6175
+call(
+  stack
+)
+type(
+  bool
+)
+"src/ast_util.ml" 187 6065 6069 "src/ast_util.ml" 190 6133 6175
+type(
+  unit
+)
+"src/ast_util.ml" 192 6178 6182 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 187 6065 6069 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 184 5926 5930 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 182 5854 5858 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 179 5759 5763 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 176 5651 5655 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 175 5606 5610 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 172 5513 5517 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 171 5461 5465 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 170 5418 5422 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)
+"src/ast_util.ml" 169 5381 5385 "src/ast_util.ml" 192 6178 6184
+type(
+  unit
+)

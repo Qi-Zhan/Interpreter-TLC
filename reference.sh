@@ -1,0 +1,1 @@
+ocamlrun reference.byte "$@"
