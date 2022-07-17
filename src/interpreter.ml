@@ -63,9 +63,13 @@ let rec trystep (e : Expr.t) : outcome =
       | _, _ -> Step Expr.False
   )
   | Expr.App {lam ; arg} -> (
-    (* (lam, fun lam' -> Expr.Lam {lam = lam';}) |-> fun () -> *)
-    let Expr.Lam{x;tau;e} = lam in
-    Step (Ast_util.Expr.substitute x arg e)
+    (lam, fun lam' -> Expr.App {lam = lam';arg}) |-> fun () ->
+    match lam with 
+    | Expr.Lam{x;tau;e} -> Step (Ast_util.Expr.substitute x arg e)
+    (* | Expr.Fix{x;tau;e} -> Step (Ast_util.Expr.substitute x arg e) *)
+    | _ -> raise (RuntimeError (
+    Printf.sprintf "Lambda Reached a stuck state at expression: %s" (Expr.to_string lam)))
+
   )
   | Expr.Project {e ; d}->(
     let Expr.Pair {left ; right} = e in
@@ -80,6 +84,7 @@ let rec trystep (e : Expr.t) : outcome =
     | Left -> Step (Ast_util.Expr.substitute xleft e eleft)
     | Right -> Step (Ast_util.Expr.substitute xright e eright)
   )
+  | Expr.Fix{x;tau;e = e'} -> Step (Ast_util.Expr.substitute x e e')
   | _ -> raise (RuntimeError (
     Printf.sprintf "Reached a stuck state at expression: %s" (Expr.to_string e)))
 

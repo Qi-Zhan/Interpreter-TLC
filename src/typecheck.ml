@@ -128,23 +128,26 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
   )
   | Expr.Case {e;xleft;eleft;xright;eright}->(
     typecheck_expr ctx e >>= fun tau_e ->
-
     let Type.Sum{left;right} = tau_e in
     let new_ctx = String.Map.set ~key:xleft ~data:left ctx in
     let new_ctx = String.Map.set ~key:xright ~data:right new_ctx in
     typecheck_expr new_ctx eleft >>= fun tau_eleft ->
     typecheck_expr new_ctx eright >>= fun tau_eright ->
-    (* if (Ast_util.Type.aequiv (Type.Sum{left = tau_xleft;right = tau_xright}) tau_e) then *)
     if (Ast_util.Type.aequiv tau_eleft tau_eright) 
     then  Ok(tau_eleft)
     else Error(Printf.sprintf
             "Case1 have incompatible types: (%s : %s) and (%s : %s)"
             (Expr.to_string eleft) (Type.to_string tau_eleft)
             (Expr.to_string eright) (Type.to_string tau_eright))
-    (* else Error(Printf.sprintf
-            "Case2 have incompatible types: (%s : %s) and (%s : %s)"
-            (xleft) (Type.to_string tau_xleft)
-            (xright) (Type.to_string tau_xright)) *)
+  )
+  | Expr.Fix{x;tau;e}->(
+    let new_ctx = String.Map.set ~key:x ~data:tau ctx in  
+    typecheck_expr new_ctx e >>= fun tau_e -> 
+    if (Ast_util.Type.aequiv tau_e tau) then Ok(tau)
+    else Error(Printf.sprintf
+            "Fixpoint have incompatible types: (%s : %s) and (%s : %s)"
+            (x) (Type.to_string tau)
+            (Expr.to_string e) (Type.to_string tau_e))
   )
   | _ -> raise Unimplemented
 

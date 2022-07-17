@@ -146,6 +146,10 @@ module Expr = struct
       Case {e =substitute_map rename e; xleft = fresh xleft;xright = fresh xright; 
       eleft = substitute_map new_map eleft; eright = substitute_map new_map eright}
       )
+    | Fix{x;tau;e}->(
+      let new_map = String.Map.set rename x (Var (fresh x)) in
+      Fix{x = fresh x;tau; e = substitute_map new_map e;}
+    )
     | _ -> raise Unimplemented
 
   let substitute (x : string) (e' : t) (e : t) : t =
@@ -175,8 +179,8 @@ module Expr = struct
         | Some s -> Var (Int.to_string s) 
       ) 
       | Lam {x; tau;e;} -> (
-      let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
-      let new_depth = String.Map.set new_depth  ~key:x ~data:0 in
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:x ~data:0 in
         Lam {x="_"; tau =  Var "_"; e = aux new_depth e})
       | App {arg; lam} -> App { arg = aux depth arg;lam = aux depth lam;}
       | Pair { left ; right  }-> Pair {left = aux depth left; right = aux depth right}
@@ -187,6 +191,11 @@ module Expr = struct
         let new_depth = String.Map.set new_depth  ~key:xright ~data:0 in
         Case {e = aux depth e;xleft = "_";xright = "_";eleft = aux new_depth eleft; eright = aux new_depth eright}
       )
+      | Fix{x;tau;e} ->(
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:x ~data:0 in
+        Fix {x="_"; tau =  Var "_"; e = aux new_depth e})        
+      
       | _ -> raise Unimplemented
     in
     aux String.Map.empty e
