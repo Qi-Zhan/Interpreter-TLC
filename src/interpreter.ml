@@ -67,7 +67,12 @@ let rec trystep (e : Expr.t) : outcome =
     let Expr.Lam{x;tau;e} = lam in
     Step (Ast_util.Expr.substitute x arg e)
   )
-
+  | Expr.Project {e ; d}->(
+    let Expr.Pair {left ; right} = e in
+    match d with 
+    | Left -> Step left
+    | Right -> Step right
+  )
 
   | _ -> raise (RuntimeError (
     Printf.sprintf "Reached a stuck state at expression: %s" (Expr.to_string e)))

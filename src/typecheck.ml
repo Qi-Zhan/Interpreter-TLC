@@ -97,7 +97,18 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
             (Expr.to_string arg) (Type.to_string tau_arg))
     | _ -> Error(Printf.sprintf "Something strange")
   )
-
+  | Expr.Pair {left ; right} -> (
+    typecheck_expr ctx left >>= fun tau_left ->
+    typecheck_expr ctx right >>= fun tau_right ->
+      Ok (Type.Product{left = tau_left ; right = tau_right}) 
+  )
+  | Expr.Project {e ;d} -> (
+    typecheck_expr ctx e >>= fun tau_e ->
+    let Type.Product{left; right} = tau_e in
+    match d with 
+    | Left -> Ok left
+    | Right -> Ok right
+  )
   | _ -> raise Unimplemented
 
 let typecheck t = typecheck_expr String.Map.empty t

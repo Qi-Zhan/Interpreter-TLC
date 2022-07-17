@@ -30,6 +30,7 @@ module Type = struct
       | Unit -> Unit
       | Var v -> raise Unimplemented
       | Fn {arg ; ret} -> Fn{arg = aux depth arg; ret = aux depth ret}
+      | Product {left ; right} -> Product {left = aux depth left ; right = aux depth right}
       | _ -> raise Unimplemented
     in
     aux String.Map.empty tau
@@ -129,6 +130,12 @@ module Expr = struct
     | App {lam ; arg}->(
       App {lam = substitute_map rename lam; arg = substitute_map rename arg}
     )
+    | Pair {left;right}->(
+      Pair {left = substitute_map rename left ; right = substitute_map rename right}
+    )
+    | Project {e ; d}-> (
+      Project{e = substitute_map rename e; d}
+    )
     | _ -> raise Unimplemented
 
   let substitute (x : string) (e' : t) (e : t) : t =
@@ -162,6 +169,8 @@ module Expr = struct
       let new_depth = String.Map.set new_depth  ~key:x ~data:0 in
         Lam {x="_"; tau =  Var "_"; e = aux new_depth e})
       | App {arg; lam} -> App { arg = aux depth arg;lam = aux depth lam;}
+      | Pair { left ; right  }-> Pair {left = aux depth left; right = aux depth right}
+      | Project  { e ; d ; } -> Project {e = aux depth e; d}
       | _ -> raise Unimplemented
     in
     aux String.Map.empty e
