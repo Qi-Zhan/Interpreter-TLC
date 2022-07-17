@@ -76,12 +76,16 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
     match String.Map.find ctx v with 
     | None -> Error (
           Printf.sprintf
-            "Var have incompatible types: %s"
-            (Expr.to_string e) )
+            "Var %s have no types"
+             v )
     | Some tau -> Ok(tau)
   )
   | Expr.Lam {x;tau;e} -> (
-    let new_ctx = String.Map.set ctx ~key:x ~data:tau in
+    (* Corresponding to \Tau x:arg|- e:ret  
+                      ________________________________________
+                        \Tau |- (\lambda (x:arg).e): arg->ret
+    *)
+    let new_ctx = String.Map.set ctx ~key:x ~data:tau in 
     typecheck_expr new_ctx e >>= fun tau_e ->    
     Ok(Type.Fn{arg = tau; ret = tau_e;})
   )
@@ -91,7 +95,7 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
     match tau_lam with 
     | Type.Fn {arg= lam_arg; ret = lam_ret} ->
     if Ast_util.Type.aequiv lam_arg tau_arg then Ok lam_ret
-    else Error(          Printf.sprintf
+    else Error(Printf.sprintf
             "App have incompatible types: (%s : %s) and (%s : %s)"
             (Expr.to_string lam) (Type.to_string tau_lam)
             (Expr.to_string arg) (Type.to_string tau_arg))
@@ -108,6 +112,39 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
     match d with 
     | Left -> Ok left
     | Right -> Ok right
+  )
+  | Expr.Inject {e;d;tau}->(
+    typecheck_expr ctx e >>= fun tau_e ->
+    let Type.Sum{left;right} = tau in
+    match d with
+    | Left -> if (Ast_util.Type.aequiv left tau_e) then Ok(tau) else Error(Printf.sprintf
+            "Inj left have incompatible types: (%s : %s and %s)"
+            (Expr.to_string e) (Type.to_string tau_e)
+             (Type.to_string left))
+    | Right -> if (Ast_util.Type.aequiv right tau_e) then Ok(tau) else Error(Printf.sprintf
+            "Inj right have incompatible types: (%s : %s and %s)"
+            (Expr.to_string e) (Type.to_string tau_e)
+             (Type.to_string right))
+  )
+  | Expr.Case {e;xleft;eleft;xright;eright}->(
+    typecheck_expr ctx e >>= fun tau_e ->
+
+    let Type.Sum{left;right} = tau_e in
+    let new_ctx = String.Map.set ~key:xleft ~data:left ctx in
+    let new_ctx = String.Map.set ~key:xright ~data:right new_ctx in
+    typecheck_expr new_ctx eleft >>= fun tau_eleft ->
+    typecheck_expr new_ctx eright >>= fun tau_eright ->
+    (* if (Ast_util.Type.aequiv (Type.Sum{left = tau_xleft;right = tau_xright}) tau_e) then *)
+    if (Ast_util.Type.aequiv tau_eleft tau_eright) 
+    then  Ok(tau_eleft)
+    else Error(Printf.sprintf
+            "Case1 have incompatible types: (%s : %s) and (%s : %s)"
+            (Expr.to_string eleft) (Type.to_string tau_eleft)
+            (Expr.to_string eright) (Type.to_string tau_eright))
+    (* else Error(Printf.sprintf
+            "Case2 have incompatible types: (%s : %s) and (%s : %s)"
+            (xleft) (Type.to_string tau_xleft)
+            (xright) (Type.to_string tau_xright)) *)
   )
   | _ -> raise Unimplemented
 

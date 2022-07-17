@@ -31,6 +31,7 @@ module Type = struct
       | Var v -> raise Unimplemented
       | Fn {arg ; ret} -> Fn{arg = aux depth arg; ret = aux depth ret}
       | Product {left ; right} -> Product {left = aux depth left ; right = aux depth right}
+      | Sum {left;right} -> Sum{left = aux depth left; right = aux depth right}
       | _ -> raise Unimplemented
     in
     aux String.Map.empty tau
@@ -136,6 +137,15 @@ module Expr = struct
     | Project {e ; d}-> (
       Project{e = substitute_map rename e; d}
     )
+    | Inject { e ;d ; tau ; }->(
+      Inject {e = substitute_map rename e;d;tau}
+    )
+    | Case {e;xleft;xright;eleft;eright}->(
+      let new_map = String.Map.set rename xleft (Var (fresh xleft)) in
+      let new_map = String.Map.set new_map xright (Var (fresh xright)) in
+      Case {e =substitute_map rename e; xleft = fresh xleft;xright = fresh xright; 
+      eleft = substitute_map new_map eleft; eright = substitute_map new_map eright}
+      )
     | _ -> raise Unimplemented
 
   let substitute (x : string) (e' : t) (e : t) : t =
@@ -171,6 +181,12 @@ module Expr = struct
       | App {arg; lam} -> App { arg = aux depth arg;lam = aux depth lam;}
       | Pair { left ; right  }-> Pair {left = aux depth left; right = aux depth right}
       | Project  { e ; d ; } -> Project {e = aux depth e; d}
+      | Inject {e;d;tau}->Inject {e = aux depth e;d;tau = Var "_"}
+      | Case {e;xleft;xright;eleft;eright}->(
+        let new_depth = String.Map.set depth  ~key:xleft ~data:0 in
+        let new_depth = String.Map.set new_depth  ~key:xright ~data:0 in
+        Case {e = aux depth e;xleft = "_";xright = "_";eleft = aux new_depth eleft; eright = aux new_depth eright}
+      )
       | _ -> raise Unimplemented
     in
     aux String.Map.empty e

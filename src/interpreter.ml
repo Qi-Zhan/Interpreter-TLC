@@ -73,7 +73,13 @@ let rec trystep (e : Expr.t) : outcome =
     | Left -> Step left
     | Right -> Step right
   )
-
+  | Expr.Case {e;xleft;xright;eleft;eright}->(
+    (e, fun e' -> Expr.Case{e=e';xleft;xright;eleft;eright}) |-> fun () ->
+    let Expr.Inject{e;d;tau} = e in
+    match d with
+    | Left -> Step (Ast_util.Expr.substitute xleft e eleft)
+    | Right -> Step (Ast_util.Expr.substitute xright e eright)
+  )
   | _ -> raise (RuntimeError (
     Printf.sprintf "Reached a stuck state at expression: %s" (Expr.to_string e)))
 
