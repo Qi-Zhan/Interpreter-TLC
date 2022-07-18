@@ -161,22 +161,35 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
   | Expr.Fold_{e;tau}->(
     typecheck_expr ctx e >>= fun tau_e -> 
     let Type.Rec{a;tau = tau'} = tau in 
-    let new_tau = Ast_util.Type.substitute a tau tau in
+    let new_tau = Ast_util.Type.substitute a tau tau' in
     if (Ast_util.Type.aequiv new_tau tau_e) then  Ok(tau)
       else Error(Printf.sprintf "Fold Error %s and %s and %s"(Type.to_string tau_e) (Type.to_string tau) (Type.to_string new_tau))
   )
   | Expr.Unfold(t) ->(
     typecheck_expr ctx t >>= fun t-> 
-    let Type.Rec{a;tau} = t in
-    Ok(Ast_util.Type.substitute a (Type.Rec{a;tau}) tau)
+    match t with 
+    | Type.Rec{a;tau} -> Ok(Ast_util.Type.substitute a (Type.Rec{a;tau}) tau)
+    | _ ->Error(Printf.sprintf
+            "Unfold have incompatible types: (%s : %s)"
+            (Expr.to_string e) (Type.to_string t))
   )
-  (* | Expr.Export{e;tau_adt;tau_mod}->(
+  | Expr.Export{e;tau_adt;tau_mod}->(
     typecheck_expr ctx e >>= fun tau_e ->
-    let new_tau = Ast_util.Type.substitute  
+    let Type.Exists{a;tau} = tau_mod  in
+    let new_tau = Ast_util.Type.substitute  a tau_adt tau in
+    if (Ast_util.Type.aequiv new_tau tau_e) then Ok(tau_mod)
+    else Error(Printf.sprintf
+            "Export have incompatible types: (%s and %s)"
+            (Type.to_string tau_e) (Type.to_string new_tau))
   )
-  | Expr.Import{x;a;e_mod;e_body}->(
-
-  ) *)
+  | Expr.Import{x;a = b;e_mod;e_body}->(
+    typecheck_expr ctx e_mod >>= fun tau_e_mod ->
+    let Type.Exists{a;tau} = tau_e_mod in
+    let new_type = (Ast_util.Type.substitute a (Var b) tau) in
+    let new_ctx = String.Map.set ~key:x ~data:new_type ctx in
+    typecheck_expr new_ctx e_body >>= fun tau_e_body ->
+    Ok(tau_e_body)
+  )
   | _ -> raise Unimplemented
 
 let typecheck t = typecheck_expr String.Map.empty t

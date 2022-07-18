@@ -28,11 +28,13 @@ module Type = struct
       Forall {a = fresh a; tau = substitute_map new_name tau}
     )
     | Rec {a ; tau}-> (
-      (* let new_name = String.Map.set rename ~key:a ~data:(Var(fresh a)) in *)
-      substitute_map rename tau
+      Rec{a ; tau =  substitute_map rename tau}
     )
-    | Exists { a; tau} -> raise Unimplemented
-    (* | _ -> raise Unimplemented *)
+    | Exists {a; tau} -> (
+      let new_name = String.Map.set rename ~key:a ~data:(Var(fresh a)) in
+      Exists {a = fresh a; tau = substitute_map new_name tau}
+    )
+    | _ -> raise Unimplemented
 
   let substitute (x : string) (tau' : t) (tau : t) : t =
     substitute_map (String.Map.singleton x tau') tau
@@ -57,7 +59,12 @@ module Type = struct
       | Rec{a;tau}->(
         let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
         let new_depth = String.Map.set new_depth  ~key:a ~data:0 in
-        Rec {a;tau = aux new_depth tau})         
+        Rec {a = "_";tau = aux new_depth tau})         
+      | Exists{a;tau}->(
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:a ~data:0 in
+        Exists {a ="_";tau = aux new_depth tau}
+      )
       | _ -> raise Unimplemented
     in
     aux String.Map.empty tau
@@ -190,6 +197,11 @@ module Expr = struct
     | Unfold(t)->(
       Unfold(substitute_map rename t)
     )
+    | Export  { e ; tau_adt ; tau_mod; }-> Export {e = substitute_map rename e; tau_adt;tau_mod}
+    | Import  { x ; a ; e_mod ;e_body ;}->(
+      let new_map = String.Map.set rename x (Var (fresh x)) in
+      Import {x = fresh x; a; e_mod = substitute_map new_map e_mod; e_body = substitute_map new_map e_body}
+    )
     | _ -> raise Unimplemented
 
   let substitute (x : string) (e' : t) (e : t) : t =
@@ -245,10 +257,15 @@ module Expr = struct
         TyApp{e = aux depth e;tau = Var("_")}
       )
       | Fold_ {e;tau}->(
-        (* let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in *)
-        Fold_{e = aux depth e; tau = Var("_")}
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        Fold_{e = aux new_depth e; tau = Var("_")}
       )
       | Unfold(t)-> Unfold(aux depth t)
+      | Export {e ;tau_adt ; tau_mod }-> Export{e=aux depth e; tau_adt = Var("_") ; tau_mod =  Var("_") }
+      | Import {x ; a ; e_mod; e_body} ->         
+        (* let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in *)
+        let new_depth = String.Map.set depth  ~key:x ~data:0 in
+        Import{x="_";a="_";e_mod = aux new_depth e_mod; e_body = aux new_depth e_body}
       | _ -> raise Unimplemented
     in
     aux String.Map.empty e
