@@ -66,12 +66,11 @@ let rec trystep (e : Expr.t) : outcome =
     (lam, fun lam' -> Expr.App {lam = lam';arg}) |-> fun () ->
     match lam with 
     | Expr.Lam{x;tau;e} -> Step (Ast_util.Expr.substitute x arg e)
-    (* | Expr.Fix{x;tau;e} -> Step (Ast_util.Expr.substitute x arg e) *)
     | _ -> raise (RuntimeError (
     Printf.sprintf "Lambda Reached a stuck state at expression: %s" (Expr.to_string lam)))
-
   )
   | Expr.Project {e ; d}->(
+    (e, fun e' -> Expr.Project{e=e';d}) |-> fun () ->
     let Expr.Pair {left ; right} = e in
     match d with 
     | Left -> Step left
@@ -85,6 +84,21 @@ let rec trystep (e : Expr.t) : outcome =
     | Right -> Step (Ast_util.Expr.substitute xright e eright)
   )
   | Expr.Fix{x;tau;e = e'} -> Step (Ast_util.Expr.substitute x e e')
+  | Expr.TyApp { e; tau}-> (
+    (e, fun e' -> Expr.TyApp {e = e';tau}) |-> fun()->
+    let Expr.TyLam{a;e = e'} = e in
+    Step(e')
+  )
+  | Expr.Unfold(t) ->(
+      (t, fun t' -> Expr.Unfold(t')) |-> fun () ->
+      let Expr.Fold_{e;tau} = t in
+      Step(e)
+  )
+  | Expr.Import {x; a; e_mod; e_body}->(
+    (e_mod, fun e_mod' -> Expr.Import {x; a; e_mod = e_mod'; e_body}) |-> fun()->
+    let Expr.Export{e;tau_adt;tau_mod} = e_mod in
+    Step(Ast_util.Expr.substitute x e e_body)
+  )
   | _ -> raise (RuntimeError (
     Printf.sprintf "Reached a stuck state at expression: %s" (Expr.to_string e)))
 

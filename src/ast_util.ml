@@ -15,8 +15,24 @@ module Type = struct
     (* Add more cases here! *)
     | Bool -> Bool
     | Unit -> Unit
-    | Var v -> Var v
-    | _ -> raise Unimplemented
+    | Var v -> (
+      match String.Map.find rename v with
+      | Some t -> t
+      | None -> Var v
+    )
+    | Fn{arg;ret}-> Fn{ arg = substitute_map rename arg; ret = substitute_map rename ret}
+    | Product{left;right}-> Product{left = substitute_map rename left; right = substitute_map rename right}
+    | Sum {left ; right} -> Sum{left = substitute_map rename left; right = substitute_map rename right}
+    | Forall{a;tau}-> (
+      let new_name = String.Map.set rename ~key:a ~data:(Var(fresh a)) in
+      Forall {a = fresh a; tau = substitute_map new_name tau}
+    )
+    | Rec {a ; tau}-> (
+      (* let new_name = String.Map.set rename ~key:a ~data:(Var(fresh a)) in *)
+      substitute_map rename tau
+    )
+    | Exists { a; tau} -> raise Unimplemented
+    (* | _ -> raise Unimplemented *)
 
   let substitute (x : string) (tau' : t) (tau : t) : t =
     substitute_map (String.Map.singleton x tau') tau
@@ -28,10 +44,20 @@ module Type = struct
       (* Add more cases here! *)
       | Bool -> Bool
       | Unit -> Unit
-      | Var v -> raise Unimplemented
+      | Var v -> (match String.Map.find depth v with
+                | Some i -> Var(Int.to_string i) 
+                | None -> Var v)
       | Fn {arg ; ret} -> Fn{arg = aux depth arg; ret = aux depth ret}
       | Product {left ; right} -> Product {left = aux depth left ; right = aux depth right}
       | Sum {left;right} -> Sum{left = aux depth left; right = aux depth right}
+      | Forall{a ; tau} ->(
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:a ~data:0 in
+        Forall {a;tau = aux new_depth tau}) 
+      | Rec{a;tau}->(
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:a ~data:0 in
+        Rec {a;tau = aux new_depth tau})         
       | _ -> raise Unimplemented
     in
     aux String.Map.empty tau
@@ -83,7 +109,7 @@ module Type = struct
               (p "forall x . forall y . x -> y"))
 
   (* Uncomment the line below when you want to run the inline tests. *)
-  (* let () = inline_tests () *)
+  let () = inline_tests ()
 end
 
 module Expr = struct
@@ -95,10 +121,12 @@ module Expr = struct
     | Binop {binop; left; right} -> Binop {
       binop;
       left = substitute_map rename left;
-      right = substitute_map rename right}
+      right = substitute_map rename right
+      }
     (* Put more cases here! *)
     | True -> True
     | False -> False
+    | Unit -> Unit
     | And {left;right} -> And{
       left = substitute_map rename left;
       right = substitute_map rename right
@@ -150,6 +178,18 @@ module Expr = struct
       let new_map = String.Map.set rename x (Var (fresh x)) in
       Fix{x = fresh x;tau; e = substitute_map new_map e;}
     )
+    | TyLam{a;e}->(
+      TyLam{a;e = substitute_map rename e;}
+    )
+    | TyApp {e;tau}->(
+      TyApp{e = substitute_map rename e; tau}
+    )
+    | Fold_ {e;tau}->(
+      Fold_{e = substitute_map rename e; tau}
+    )
+    | Unfold(t)->(
+      Unfold(substitute_map rename t)
+    )
     | _ -> raise Unimplemented
 
   let substitute (x : string) (e' : t) (e : t) : t =
@@ -195,7 +235,20 @@ module Expr = struct
         let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
         let new_depth = String.Map.set new_depth  ~key:x ~data:0 in
         Fix {x="_"; tau =  Var "_"; e = aux new_depth e})        
-      
+      | TyLam {a;e}->(
+        (* TBD *)
+        let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in
+        let new_depth = String.Map.set new_depth  ~key:a ~data:0 in
+        TyLam{a  = "_" ; e = aux new_depth e}
+      )
+      | TyApp {e;tau}->(
+        TyApp{e = aux depth e;tau = Var("_")}
+      )
+      | Fold_ {e;tau}->(
+        (* let new_depth = String.Map.map depth ~f:(fun d -> (+1)) in *)
+        Fold_{e = aux depth e; tau = Var("_")}
+      )
+      | Unfold(t)-> Unfold(aux depth t)
       | _ -> raise Unimplemented
     in
     aux String.Map.empty e
@@ -262,10 +315,10 @@ module Expr = struct
     assert (not (aequiv (p "fun (x : num) -> fun (x : num) -> x + x")
                    (p "fun (x : num) -> fun (y : num) -> y + x")));
 
-    (* assert (
+    assert (
       aequiv
         (p "tyfun a -> fun (x : a) -> x")
-        (p "tyfun b -> fun (x : b) -> x")); *)
+        (p "tyfun b -> fun (x : b) -> x"));
 
     ()
 

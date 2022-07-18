@@ -149,6 +149,34 @@ let rec typecheck_expr (ctx : Type.t String.Map.t) (e : Expr.t)
             (x) (Type.to_string tau)
             (Expr.to_string e) (Type.to_string tau_e))
   )
+  | Expr.TyLam {a;e}->(
+    typecheck_expr ctx e >>= fun tau_e -> 
+    Ok(Type.Forall{a;tau = tau_e})
+  )
+  | Expr.TyApp {e;tau}->(
+    typecheck_expr ctx e >>= fun tau_e -> 
+    let Type.Forall{a ; tau = tau_body} = tau_e in 
+    Ok(Ast_util.Type.substitute a tau tau_body)
+  )
+  | Expr.Fold_{e;tau}->(
+    typecheck_expr ctx e >>= fun tau_e -> 
+    let Type.Rec{a;tau = tau'} = tau in 
+    let new_tau = Ast_util.Type.substitute a tau tau in
+    if (Ast_util.Type.aequiv new_tau tau_e) then  Ok(tau)
+      else Error(Printf.sprintf "Fold Error %s and %s and %s"(Type.to_string tau_e) (Type.to_string tau) (Type.to_string new_tau))
+  )
+  | Expr.Unfold(t) ->(
+    typecheck_expr ctx t >>= fun t-> 
+    let Type.Rec{a;tau} = t in
+    Ok(Ast_util.Type.substitute a (Type.Rec{a;tau}) tau)
+  )
+  (* | Expr.Export{e;tau_adt;tau_mod}->(
+    typecheck_expr ctx e >>= fun tau_e ->
+    let new_tau = Ast_util.Type.substitute  
+  )
+  | Expr.Import{x;a;e_mod;e_body}->(
+
+  ) *)
   | _ -> raise Unimplemented
 
 let typecheck t = typecheck_expr String.Map.empty t
